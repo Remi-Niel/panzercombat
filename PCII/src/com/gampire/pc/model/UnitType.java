@@ -29,7 +29,7 @@ import com.gampire.pc.util.string.StringUtil;
 
 public class UnitType implements HasImageIcon, Comparable<UnitType> {
 
-	private static final Map<Alliance, Vector<UnitType>> allianceMap;
+	private static final Map<Alliance, Vector<UnitType>> allianceMap = new HashMap<Alliance, Vector<UnitType>>();
 
 	private static final String UNIT_TYPES_FILE_PATH = "data/unitTypes.txt";
 
@@ -38,8 +38,6 @@ public class UnitType implements HasImageIcon, Comparable<UnitType> {
 	private static final UnitType[] all;
 
 	static {
-		allianceMap = new HashMap<Alliance, Vector<UnitType>>();
-
 		UnitTypeBean[] unitTypeBeans = (UnitTypeBean[]) JSONBeanFactory
 				.createBeans(UnitTypeBean.class, UNIT_TYPES_FILE_PATH);
 
@@ -54,6 +52,10 @@ public class UnitType implements HasImageIcon, Comparable<UnitType> {
 					+ UNIT_TYPE_IMAGES_DIRECTORY_PATH + "' does not exist.");
 		}
 		for (String unitTypeImage : unitTypeImages) {
+			// skip ".svn" and "Thumbs.db" files / dirs
+			if (unitTypeImage.equals(".svn")
+					|| unitTypeImage.equals("Thumbs.db"))
+				continue;
 			unitTypeImageUsedMap.put(unitTypeImage, Boolean.FALSE);
 		}
 
@@ -135,7 +137,7 @@ public class UnitType implements HasImageIcon, Comparable<UnitType> {
 		}
 		if (unusedUnitTypeImagesString.length() > 0) {
 			throw new Error(
-					"The following images are not used in the directory '"
+					"The following files are not used in the directory '"
 							+ UNIT_TYPE_IMAGES_DIRECTORY_PATH + "':\n"
 							+ unusedUnitTypeImagesString);
 		}

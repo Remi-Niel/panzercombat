@@ -10,7 +10,7 @@
 <currentDirectory>${EXECUTABLEPATH}</currentDirectory>
 <embeddedJar>false</embeddedJar>
 <executableName>PCII.exe</executableName>
-<iconLocation>bin\com\gampire\pc\resources\icons\pcII.jpg</iconLocation>
+<iconLocation>src\com\gampire\pc\resources\images\pcII.jpg</iconLocation>
 <initialMemoryHeap>209715200</initialMemoryHeap>
 <mainClassName>com.gampire.pc.Main</mainClassName>
 <maximumMemoryHeap>209715200</maximumMemoryHeap>

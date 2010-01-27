@@ -3,7 +3,7 @@ com.gampire.pc.Main -> com.gampire.pc.Main:
     void main(java.lang.String[]) -> main
 com.gampire.pc.action.DefendAction -> l:
     void perform(com.gampire.pc.model.Unit) -> a
-com.gampire.pc.action.FireAction -> ax:
+com.gampire.pc.action.FireAction -> aw:
     void perform(com.gampire.pc.model.Unit) -> a
 com.gampire.pc.action.MoveAction -> at:
     void perform(com.gampire.pc.model.Unit) -> a
@@ -24,11 +24,10 @@ com.gampire.pc.action.StopGameAction -> G:
     void run() -> run
 com.gampire.pc.control.BattleFieldController -> A:
     boolean gameRunning -> a
-    com.gampire.pc.model.BattleField battleField -> a
-    com.gampire.pc.model.BattleField cloneOfBattleFieldAtPreviousGameStart -> b
+    com.gampire.pc.web.BareBonesBrowserLaunch battleField$21296f -> a
+    com.gampire.pc.web.BareBonesBrowserLaunch cloneOfBattleFieldAtPreviousGameStart$21296f -> b
     com.gampire.pc.view.frame.BattleFieldFrame battleFieldFrame -> a
     com.gampire.pc.view.panel.BattleFieldPanel battleFieldPanel -> a
-    com.gampire.pc.speech.Speaker speaker -> a
     javax.swing.Timer animationTimer -> a
     void startGame() -> a
     void stopGame() -> b
@@ -54,17 +53,17 @@ com.gampire.pc.control.BattleFieldController$CombatScroller -> ap:
     com.gampire.pc.control.BattleFieldController this$0 -> a
     void run() -> run
 com.gampire.pc.control.BattleFieldController$DestroyedUnitsRemover -> ar:
-    com.gampire.pc.model.Camp campLosingUnits -> a
+    com.gampire.pc.util.thread.ThreadUtil campLosingUnits$2a59c05e -> a
     com.gampire.pc.control.BattleFieldController this$0 -> a
     void run() -> run
 com.gampire.pc.control.BattleFieldController$TargetSelectionnerAndScroller -> D:
     com.gampire.pc.control.BattleFieldController this$0 -> a
     void run() -> run
 com.gampire.pc.control.UnitTableMouseListener -> N:
-    com.gampire.pc.model.Camp camp -> a
+    com.gampire.pc.util.thread.ThreadUtil camp$2a59c05e -> a
     com.gampire.pc.view.panel.BattleFieldControlPanel battlefieldControlPanel -> a
     void mouseClicked(java.awt.event.MouseEvent) -> mouseClicked
-com.gampire.pc.json.JSONArray -> aB:
+com.gampire.pc.json.JSONArray -> az:
     java.util.ArrayList myArrayList -> a
     com.gampire.pc.json.JSONObject getJSONObject(int) -> a
     java.lang.String join(java.lang.String) -> a
@@ -92,6 +91,7 @@ com.gampire.pc.json.JSONObject -> F:
     java.lang.Object stringToValue(java.lang.String) -> b
     void testValidity(java.lang.Object) -> a
     java.lang.String toString() -> toString
+    java.lang.String toString(int) -> a
     java.lang.String toString(int,int) -> a
     java.lang.String valueToString(java.lang.Object) -> a
     java.lang.String valueToString(java.lang.Object,int,int) -> a
@@ -113,8 +113,10 @@ com.gampire.pc.json.JSONTokener -> q:
     java.lang.Object nextValue() -> a
     com.gampire.pc.json.JSONException syntaxError(java.lang.String) -> a
     java.lang.String toString() -> toString
-com.gampire.pc.license.LicenseManager -> aA:
+com.gampire.pc.license.LicenseManager -> ay:
     boolean LICENSE_VALID -> a
+    void showLimitedFunctionalityMessage(java.awt.Component) -> a
+    void showLimitedFunctionalityShortMessage(java.awt.Component) -> b
 com.gampire.pc.model.Alliance -> y:
     com.gampire.pc.model.AllianceBean allianceBean -> a
     java.awt.Image flag -> a
@@ -122,6 +124,8 @@ com.gampire.pc.model.Alliance -> y:
     com.gampire.pc.model.Alliance[] all -> a
     com.gampire.pc.model.Alliance get(java.lang.String) -> a
     com.gampire.pc.model.Alliance[] getAll() -> a
+    java.lang.String getName() -> a
+    javax.swing.ImageIcon getFlagIcon() -> a
 com.gampire.pc.model.AllianceBean -> Y:
 com.gampire.pc.model.Army -> ai:
     com.gampire.pc.model.Army[] all -> a
@@ -135,36 +139,16 @@ com.gampire.pc.model.Army -> ai:
     java.awt.Color brightColor -> c
     com.gampire.pc.model.Army get(java.lang.String) -> a
     java.lang.String toString() -> toString
+    com.gampire.pc.model.Alliance getAlliance() -> a
+    java.awt.image.BufferedImage getFlag() -> a
+    java.awt.image.BufferedImage getSmallFlag() -> b
+    javax.swing.ImageIcon getFlagIcon() -> a
+    java.awt.Color getColor() -> a
+    java.awt.Color getMiddleBrightColor() -> b
+    java.awt.Color getBrightColor() -> c
 com.gampire.pc.model.ArmyBean -> h:
-com.gampire.pc.model.BattleField -> k:
-    com.gampire.pc.model.Camp camp1 -> a
-    com.gampire.pc.model.Camp camp2 -> b
-    com.gampire.pc.view.table.UnitTableModel unitTableModel1 -> a
-    com.gampire.pc.view.table.UnitTableModel unitTableModel2 -> b
-    com.gampire.pc.model.Unit unitSelectedForAction -> a
-    com.gampire.pc.control.BattleFieldController battleFieldController -> a
-    void deselectUnitSelectedForAction() -> a
-com.gampire.pc.model.Camp -> av:
-    com.gampire.pc.model.BattleField battleField -> a
-    com.gampire.pc.model.Alliance alliance -> a
-    int numPoints -> a
-    java.util.Vector units -> a
-    boolean isLeft -> a
-    void addUnit() -> a
-    void addUnit(com.gampire.pc.model.Unit) -> b
-    void removeUnit(com.gampire.pc.model.Unit) -> a
-    void updateUnitsWithSameName(java.lang.String) -> a
-    com.gampire.pc.model.Unit getUnitSelectedForAction() -> a
-    boolean isSelectedForAction() -> a
-    boolean isSelectedAsTarget() -> b
-    com.gampire.pc.model.Camp getOther() -> a
-    boolean advanceAnimations() -> c
-com.gampire.pc.model.DistanceInfo -> ay:
-    int lastMeasuredDistance -> a
-    double maxMoveAfterMeasure -> a
-    int mostProbableDistance -> b
 com.gampire.pc.model.Unit -> d:
-    com.gampire.pc.model.Camp camp -> a
+    com.gampire.pc.util.thread.ThreadUtil camp$2a59c05e -> a
     com.gampire.pc.model.UnitType unitType -> a
     java.lang.String name -> a
     boolean selectedForAction -> a
@@ -173,14 +157,14 @@ com.gampire.pc.model.Unit -> d:
     boolean destroyed -> d
     boolean exploding -> e
     int additionalDefendPoints -> a
-    java.util.Map distanceInfoMap -> a
-    com.gampire.pc.model.UnitAnimation animation -> a
+    java.util.Map distanceInfoMapToEnemyUnits -> a
+    com.gampire.pc.util.string.StringUtil animation$3e130d13 -> a
     javax.swing.ImageIcon getImageIcon() -> a
     void setSelectedForAction(boolean) -> a
     java.lang.String toString() -> toString
-    com.gampire.pc.model.Unit getClosestUnit() -> a
+    com.gampire.pc.model.Unit getClosestEnemyUnit() -> a
     int compareTo(java.lang.Object) -> compareTo
-com.gampire.pc.model.UnitAction -> aF:
+com.gampire.pc.model.UnitAction -> aC:
     com.gampire.pc.model.UnitAction MOVE -> a
     com.gampire.pc.model.UnitAction FIRE -> b
     com.gampire.pc.model.UnitAction MOVE_AND_FIRE -> c
@@ -190,45 +174,59 @@ com.gampire.pc.model.UnitAction -> aF:
     java.applet.AudioClip clip -> a
     java.lang.String toString() -> toString
     void playSound() -> a
-com.gampire.pc.model.UnitAnimation -> aC:
-    com.gampire.pc.model.Unit unit -> a
-    boolean blinkOn -> a
-    int blinkingStep -> a
-    int movementStep -> b
-    int cloudMovementStep -> c
-    int explosionStep -> d
 com.gampire.pc.model.UnitType -> v:
     java.util.Map allianceMap -> a
-    java.util.Vector unitTypeNames -> a
     com.gampire.pc.model.UnitType[] all -> a
-    int nextIndex -> b
+    int nextIndex -> a
     com.gampire.pc.model.UnitTypeBean unitTypeBean -> a
     com.gampire.pc.model.Army army -> a
-    int index -> c
+    int index -> b
     java.awt.image.BufferedImage bigImage -> a
     java.awt.image.BufferedImage image -> b
     javax.swing.ImageIcon icon -> a
-    int points -> a
+    int points -> c
     boolean imageReplacedByFlag -> a
+    int getAntiPersonnelRange() -> a
+    int getAntiTankRange() -> b
+    com.gampire.pc.model.Army getArmy() -> a
+    int getDefendValue() -> c
     javax.swing.ImageIcon getImageIcon() -> a
+    java.awt.image.BufferedImage getBigImage() -> a
+    int getMoveRange() -> d
+    int getPoints() -> e
+    java.lang.String getName() -> a
+    java.lang.String getShortName() -> b
+    boolean isArmored() -> a
+    int getMaximumEffectiveRange(com.gampire.pc.model.UnitType) -> a
+    int getMeanEffectiveRange(com.gampire.pc.model.UnitType) -> b
     java.lang.String toString() -> toString
-    com.gampire.pc.model.UnitType[] getAllForAliance(com.gampire.pc.model.Alliance) -> a
-    int compareTo(com.gampire.pc.model.UnitType) -> a
+    com.gampire.pc.model.UnitType selectRandomUnitType(com.gampire.pc.model.Alliance) -> a
+    java.util.Vector getAllForAliance(com.gampire.pc.model.Alliance) -> a
+    int compareTo(com.gampire.pc.model.UnitType) -> c
     int compareTo(java.lang.Object) -> compareTo
 com.gampire.pc.model.UnitTypeBean -> ag:
     java.lang.String image -> a
 com.gampire.pc.sound.AudioClipUtil -> E:
 com.gampire.pc.speech.Speaker -> ad:
+    com.gampire.pc.speech.Speaker instance -> a
     java.lang.String VOICE_NAME -> a
     com.sun.speech.freetts.Voice voice -> a
+    com.gampire.pc.speech.Speaker getInstance() -> a
     void speakAndWait(java.lang.String) -> a
     void speak(java.lang.String) -> b
-com.gampire.pc.speech.Speaker$SpeakerThread -> aD:
+    com.sun.speech.freetts.Voice access$0(com.gampire.pc.speech.Speaker) -> a
+com.gampire.pc.speech.Speaker$SpeakerThread -> aA:
     java.lang.String message -> a
     com.gampire.pc.speech.Speaker this$0 -> a
     void run() -> run
 com.gampire.pc.swing.cursor.CursorUtil -> x:
+    int lastMeasuredDistance -> a
+    double maxMoveAfterMeasure -> a
+    int mostProbableDistance -> b
     void positionCursor(java.awt.Window,java.awt.Point) -> a
+    void update(double) -> a
+    boolean isCertain() -> a
+    int getMostProbableDistance() -> a
 com.gampire.pc.swing.lookandfeel.PCIITheme -> ae:
     java.awt.Color GRAY -> a
     java.awt.Color LIGHT_GRAY -> b
@@ -276,8 +274,13 @@ com.gampire.pc.util.image.ImageUtil -> T:
     java.awt.image.BufferedImage computeScaledImage(java.awt.Image,int,int) -> a
     java.awt.image.BufferedImage computeScaledImage(java.awt.Image,int) -> a
     java.awt.image.BufferedImage computeOverlayedImage(java.awt.Image,java.awt.Image,int,int) -> a
-    java.awt.image.BufferedImage addMovement(java.awt.image.BufferedImage,boolean,float) -> a
-    java.awt.image.BufferedImage fade(java.awt.image.BufferedImage,int) -> a
+    java.awt.image.BufferedImage addExplosion(java.awt.image.BufferedImage,boolean,float) -> a
+    java.awt.image.BufferedImage addCloud(java.awt.image.BufferedImage,boolean,float) -> b
+    java.awt.image.BufferedImage addMovement(java.awt.image.BufferedImage,boolean,float) -> c
+    java.awt.image.BufferedImage addLens(java.awt.image.BufferedImage) -> a
+    java.awt.image.BufferedImage addWall(java.awt.image.BufferedImage,int) -> a
+    java.awt.image.BufferedImage fade(java.awt.image.BufferedImage,int) -> b
+    java.awt.image.BufferedImage superpose(java.awt.image.BufferedImage,java.awt.image.BufferedImage) -> a
 com.gampire.pc.util.image.filter.AbstractBufferedImageOp -> z:
     java.awt.image.BufferedImage createCompatibleDestImage(java.awt.image.BufferedImage,java.awt.image.ColorModel) -> createCompatibleDestImage
     java.awt.geom.Rectangle2D getBounds2D(java.awt.image.BufferedImage) -> getBounds2D
@@ -311,7 +314,7 @@ com.gampire.pc.util.image.filter.MotionBlurFilter -> C:
     void premultiply(int[],int,int) -> a
     void unpremultiply(int[],int,int) -> b
     java.lang.String toString() -> toString
-com.gampire.pc.util.image.filter.PointFilter -> aw:
+com.gampire.pc.util.image.filter.PointFilter -> av:
     java.awt.image.BufferedImage filter(java.awt.image.BufferedImage,java.awt.image.BufferedImage) -> filter
     int filterRGB$4868d301(int) -> b
 com.gampire.pc.util.image.filter.SphereFilter -> M:
@@ -345,9 +348,41 @@ com.gampire.pc.util.image.filter.TransformFilter -> as:
     int getPixel(int[],int,int,int,int) -> a
     java.awt.image.BufferedImage filterPixelsNN(java.awt.image.BufferedImage,int,int,int[],java.awt.Rectangle) -> a
 com.gampire.pc.util.string.StringUtil -> S:
+    com.gampire.pc.model.Unit unit -> a
+    boolean blinkOn -> a
+    int blinkingStep -> a
+    int movementStep -> b
+    int cloudMovementStep -> c
+    int explosionStep -> d
     int getLevenshteinDistance(java.lang.String,java.lang.String) -> a
+    boolean getBlinkOn() -> a
+    float getMovementPercentage() -> a
+    float getCloudMovementPercentage() -> b
+    float getExplosionPercentage() -> c
+    boolean advance() -> b
 com.gampire.pc.util.thread.ThreadUtil -> m:
+    com.gampire.pc.web.BareBonesBrowserLaunch battleField$21296f -> a
+    com.gampire.pc.model.Alliance alliance -> a
+    int numPoints -> a
+    java.util.Vector units -> a
+    boolean isLeft -> a
     void waitAWhile(int) -> a
+    com.gampire.pc.model.Alliance getAlliance() -> a
+    int getIndex(com.gampire.pc.model.Unit) -> a
+    java.util.Vector getUnits() -> a
+    void addUnit() -> a
+    void addUnit(com.gampire.pc.model.Unit) -> a
+    void removeUnit(com.gampire.pc.model.Unit) -> b
+    void changeUnitType(int,com.gampire.pc.model.UnitType) -> a
+    int removeDestroyedUnits() -> a
+    void updateUnitsWithSameName(java.lang.String) -> a
+    int getNumPoints() -> b
+    com.gampire.pc.model.Unit getUnitSelectedForAction() -> a
+    boolean isSelectedForAction() -> a
+    boolean isSelectedAsTarget() -> b
+    boolean isLeft() -> c
+    com.gampire.pc.util.thread.ThreadUtil getOther$2463ddff() -> a
+    boolean advanceAnimations() -> d
 com.gampire.pc.view.dialog.DistanceDialog -> B:
     javax.swing.JLabel messageLabel -> b
     javax.swing.JLabel distanceLabel -> a
@@ -394,13 +429,17 @@ com.gampire.pc.view.panel.BattleFieldControlPanel -> ac:
     java.lang.String TOOLTIP_MOVE_AND_FIRE -> d
     java.lang.String TOOLTIP_MOVE_AND_FIRE_NO_TARGET -> e
     java.lang.String TOOLTIP_DEFEND -> f
-    com.gampire.pc.model.BattleField battleField -> a
+    com.gampire.pc.web.BareBonesBrowserLaunch battleField$21296f -> a
     boolean playGameButtonsEnabled -> a
     void formatButton(javax.swing.JButton,java.lang.String,java.lang.String) -> a
     void tableChanged(javax.swing.event.TableModelEvent) -> tableChanged
     void updateButtons(boolean) -> a
     void updateButtons() -> a
-com.gampire.pc.view.panel.BattleFieldControlPanel$1 -> aE:
+    javax.swing.JButton getDefendButton() -> a
+    javax.swing.JButton getFireButton() -> b
+    javax.swing.JButton getMoveAndFireButton() -> c
+    javax.swing.JButton getMoveButton() -> d
+com.gampire.pc.view.panel.BattleFieldControlPanel$1 -> aB:
     com.gampire.pc.view.panel.BattleFieldControlPanel this$0 -> a
     void actionPerformed(java.awt.event.ActionEvent) -> actionPerformed
 com.gampire.pc.view.panel.BattleFieldControlPanel$2 -> X:
@@ -435,16 +474,19 @@ com.gampire.pc.view.panel.BattleFieldPanel -> ak:
     java.awt.image.BufferedImage scaledBackground -> b
     void paintComponent(java.awt.Graphics) -> paintComponent
     void scrollToUnit(com.gampire.pc.model.Unit,java.awt.Window) -> a
-    void setSelectable(com.gampire.pc.model.Camp,boolean) -> a
-    void fireTableDataChanged(com.gampire.pc.model.Camp) -> a
+    void setSelectable$1e185993(com.gampire.pc.util.thread.ThreadUtil,boolean) -> a
+    com.gampire.pc.model.Unit getSelectedUnit$18eec550(com.gampire.pc.util.thread.ThreadUtil) -> a
+    com.gampire.pc.model.Unit selectMostProbableTarget(com.gampire.pc.model.Unit) -> a
+    void fireTableDataChanged$200fb547(com.gampire.pc.util.thread.ThreadUtil) -> a
+    void setEditable(boolean) -> a
     void valueChanged(javax.swing.event.ListSelectionEvent) -> valueChanged
     void inform(java.lang.String) -> a
 com.gampire.pc.view.panel.BattleFieldPanel$1 -> ao:
     com.gampire.pc.view.panel.BattleFieldPanel this$0 -> a
     boolean val$campToUpdateIsLeft -> a
     void run() -> run
-com.gampire.pc.view.panel.CampControlPanel -> az:
-    com.gampire.pc.model.Camp camp -> a
+com.gampire.pc.view.panel.CampControlPanel -> ax:
+    com.gampire.pc.util.thread.ThreadUtil camp$2a59c05e -> a
     com.gampire.pc.view.table.UnitTableModel unitTableModel -> a
     com.gampire.pc.view.table.UnitTable unitTable -> a
     javax.swing.JButton addButton -> a
@@ -462,13 +504,12 @@ com.gampire.pc.view.panel.LogPanel -> K:
     javax.swing.text.StyledDocument document -> a
     javax.swing.text.Style informStyle -> a
     javax.swing.text.Style alertStyle -> b
-    com.gampire.pc.speech.Speaker speaker -> a
     void insertString(java.lang.String,javax.swing.text.Style) -> a
 com.gampire.pc.view.panel.LogPanel$InformRunnable -> aq:
     java.lang.String message -> a
     com.gampire.pc.view.panel.LogPanel this$0 -> a
     void run() -> run
-com.gampire.pc.view.table.UnitTable -> j:
+com.gampire.pc.view.table.UnitTable -> k:
     boolean isEditable -> b
     boolean isSelectable -> a
     com.gampire.pc.swing.model.FreezeableListSelectionModel selectionModel -> a
@@ -482,7 +523,7 @@ com.gampire.pc.view.table.UnitTable -> j:
     java.lang.String getToolTipText(java.awt.event.MouseEvent) -> getToolTipText
 com.gampire.pc.view.table.UnitTableModel -> b:
     java.lang.String[] columnNames -> a
-    com.gampire.pc.model.Camp camp -> a
+    com.gampire.pc.util.thread.ThreadUtil camp$2a59c05e -> a
     int getColumnCount() -> getColumnCount
     int getRowCount() -> getRowCount
     java.lang.String getColumnName(int) -> getColumnName
@@ -520,3 +561,21 @@ com.gampire.pc.view.window.SplashScreen -> ab:
 com.gampire.pc.view.window.SplashScreen$1 -> a:
     com.gampire.pc.view.window.SplashScreen this$0 -> a
     void actionPerformed(java.awt.event.ActionEvent) -> actionPerformed
+com.gampire.pc.web.BareBonesBrowserLaunch -> j:
+    com.gampire.pc.util.thread.ThreadUtil camp1$2a59c05e -> a
+    com.gampire.pc.util.thread.ThreadUtil camp2$2a59c05e -> b
+    com.gampire.pc.view.table.UnitTableModel unitTableModel1 -> a
+    com.gampire.pc.view.table.UnitTableModel unitTableModel2 -> b
+    com.gampire.pc.model.Unit unitSelectedForAction -> a
+    com.gampire.pc.control.BattleFieldController battleFieldController -> a
+    com.gampire.pc.util.thread.ThreadUtil getCamp1$2463ddff() -> a
+    com.gampire.pc.util.thread.ThreadUtil getCamp2$2463ddff() -> b
+    void selectUnitForAction() -> a
+    void deselectUnitSelectedForAction() -> b
+    com.gampire.pc.util.thread.ThreadUtil removeDestroyedUnits$2463ddff() -> c
+    com.gampire.pc.model.Unit getUnitSelectedForAction() -> a
+    com.gampire.pc.control.BattleFieldController getBattleFieldController() -> a
+    void setBattleFieldController(com.gampire.pc.control.BattleFieldController) -> a
+    com.gampire.pc.view.table.UnitTableModel getUnitTableModel1() -> a
+    com.gampire.pc.view.table.UnitTableModel getUnitTableModel2() -> b
+    boolean advanceAnimations() -> a

@@ -1,0 +1,10 @@
+[
+   {
+      "name": "Allied",
+      "flag": "AlliedFlag.jpg"
+   },
+   {
+      "name": "Axis",
+      "flag": "AxisFlag.jpg"
+   }
+]

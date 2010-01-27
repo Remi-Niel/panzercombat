@@ -1,0 +1,328 @@
+name;M3 Stuart;shortName;Stuart;moveRange;3;antiPersonnelRange;4;antiTankRange;3;defendValue;2;armored;TRUE;armyName;United States;image;null
+name;M5 Stuart;shortName;Stuart;moveRange;3;antiPersonnelRange;4;antiTankRange;3;defendValue;3;armored;TRUE;armyName;United States;image;null
+name;M22 Locust;shortName;Locust;moveRange;3;antiPersonnelRange;4;antiTankRange;3;defendValue;1;armored;TRUE;armyName;United States;image;null
+name;M24 Chaffee;shortName;Chaffee;moveRange;3;antiPersonnelRange;9;antiTankRange;6;defendValue;1;armored;TRUE;armyName;United States;image;null
+name;M3 Lee;shortName;Lee;moveRange;2;antiPersonnelRange;9;antiTankRange;6;defendValue;2;armored;TRUE;armyName;United States;image;null
+name;M4 Sherman 75mm;shortName;Sherman;moveRange;2;antiPersonnelRange;9;antiTankRange;6;defendValue;3;armored;TRUE;armyName;United States;image;null
+name;M4A3E2 Sherman Jumbo;shortName;Sherman;moveRange;2;antiPersonnelRange;9;antiTankRange;6;defendValue;5;armored;TRUE;armyName;United States;image;null
+name;M4A3E8 Sherman 76mm;shortName;Sherman;moveRange;2;antiPersonnelRange;9;antiTankRange;7;defendValue;3;armored;TRUE;armyName;United States;image;null
+name;M4A3 Sherman 105mm;shortName;Sherman;moveRange;2;antiPersonnelRange;15;antiTankRange;4;defendValue;3;armored;TRUE;armyName;United States;image;null
+name;M26 Pershing;shortName;Pershing;moveRange;2;antiPersonnelRange;12;antiTankRange;7;defendValue;5;armored;TRUE;armyName;United States;image;null
+name;M10 Wolverine;shortName;Wolverine;moveRange;2;antiPersonnelRange;10;antiTankRange;7;defendValue;5;armored;TRUE;armyName;United States;image;null
+name;M18 Hellcat;shortName;Hellcat;moveRange;3;antiPersonnelRange;9;antiTankRange;7;defendValue;1;armored;TRUE;armyName;United States;image;null
+name;M36 Jackson;shortName;Jackson;moveRange;2;antiPersonnelRange;12;antiTankRange;7;defendValue;3;armored;TRUE;armyName;United States;image;null
+name;M7 Priest;shortName;Priest;moveRange;2;antiPersonnelRange;15;antiTankRange;2;defendValue;3;armored;TRUE;armyName;United States;image;null
+name;M8 Gun Motor Carriage;shortName;Carriage;moveRange;3;antiPersonnelRange;9;antiTankRange;1;defendValue;2;armored;TRUE;armyName;United States;image;null
+name;M12 GMC;shortName;GMC;moveRange;2;antiPersonnelRange;18;antiTankRange;5;defendValue;1;armored;TRUE;armyName;United States;image;null
+name;M40 GMC;shortName;GMC;moveRange;2;antiPersonnelRange;18;antiTankRange;5;defendValue;1;armored;TRUE;armyName;United States;image;null
+name;M3 Halftrack;shortName;Halftrack;moveRange;3;antiPersonnelRange;4;antiTankRange;2;defendValue;1;armored;TRUE;armyName;United States;image;null
+name;M5 Halftrack;shortName;Halftrack;moveRange;3;antiPersonnelRange;4;antiTankRange;2;defendValue;1;armored;TRUE;armyName;United States;image;null
+name;M3 White Scout Car;shortName;Scout;moveRange;4;antiPersonnelRange;4;antiTankRange;2;defendValue;1;armored;TRUE;armyName;United States;image;null
+name;M3 Halftrack 75mm;shortName;Halftrack;moveRange;3;antiPersonnelRange;9;antiTankRange;6;defendValue;1;armored;TRUE;armyName;United States;image;null
+name;M8 Greyhound;shortName;Greyhound;moveRange;4;antiPersonnelRange;4;antiTankRange;3;defendValue;1;armored;TRUE;armyName;United States;image;null
+name;M20 Scout Car;shortName;Scout;moveRange;4;antiPersonnelRange;4;antiTankRange;2;defendValue;1;armored;TRUE;armyName;United States;image;null
+name;US 37mm Cannon;shortName;Cannon;moveRange;1;antiPersonnelRange;0;antiTankRange;3;defendValue;0;armored;FALSE;armyName;United States;image;null
+name;US 57mm Cannon;shortName;Cannon;moveRange;1;antiPersonnelRange;0;antiTankRange;5;defendValue;0;armored;FALSE;armyName;United States;image;null
+name;US 76mm Cannon;shortName;Cannon;moveRange;1;antiPersonnelRange;10;antiTankRange;7;defendValue;0;armored;FALSE;armyName;United States;image;null
+name;US Light Truck;shortName;Light Truck;moveRange;3;antiPersonnelRange;0;antiTankRange;0;defendValue;0;armored;FALSE;armyName;United States;image;null
+name;US Med Truck;shortName;Medium Truck;moveRange;3;antiPersonnelRange;0;antiTankRange;0;defendValue;0;armored;FALSE;armyName;United States;image;null
+name;US Heavy Truck;shortName;Heavy Truck;moveRange;3;antiPersonnelRange;0;antiTankRange;0;defendValue;0;armored;FALSE;armyName;United States;image;null
+name;Jeep;shortName;Jeep;moveRange;3;antiPersonnelRange;0;antiTankRange;0;defendValue;0;armored;FALSE;armyName;United States;image;null
+name;US Infantry Squad;shortName;Infantry Team;moveRange;1;antiPersonnelRange;4;antiTankRange;0;defendValue;1;armored;FALSE;armyName;United States;image;null
+name;US Engineer Squad;shortName;Engineer Team;moveRange;1;antiPersonnelRange;5;antiTankRange;1;defendValue;1;armored;FALSE;armyName;United States;image;null
+name;US Light MG Team;shortName;MG Team;moveRange;1;antiPersonnelRange;3;antiTankRange;1;defendValue;0;armored;FALSE;armyName;United States;image;null
+name;US Medium MG Team;shortName;MG Team;moveRange;1;antiPersonnelRange;5;antiTankRange;1;defendValue;1;armored;FALSE;armyName;United States;image;null
+name;US Heavy MG Team;shortName;MG Team;moveRange;1;antiPersonnelRange;10;antiTankRange;2;defendValue;1;armored;FALSE;armyName;United States;image;null
+name;US Light Mortar Team;shortName;Mortar Team;moveRange;1;antiPersonnelRange;4;antiTankRange;0;defendValue;0;armored;FALSE;armyName;United States;image;null
+name;US Medium Mortar Team;shortName;Mortar Team;moveRange;1;antiPersonnelRange;7;antiTankRange;1;defendValue;1;armored;FALSE;armyName;United States;image;null
+name;US Heavy Mortar Team;shortName;Mortar Team;moveRange;1;antiPersonnelRange;10;antiTankRange;2;defendValue;1;armored;FALSE;armyName;United States;image;null
+name;2.36 Bazooka Team;shortName;Bazooka Team;moveRange;1;antiPersonnelRange;5;antiTankRange;6;defendValue;0;armored;FALSE;armyName;United States;image;null
+name;3.5 Bazooka Team;shortName;Bazooka Team;moveRange;1;antiPersonnelRange;5;antiTankRange;7;defendValue;0;armored;FALSE;armyName;United States;image;null
+name;57mm Recoilless Rifle;shortName;Rifle Team;moveRange;1;antiPersonnelRange;5;antiTankRange;5;defendValue;0;armored;FALSE;armyName;United States;image;null
+name;75mm Recoilless Rifle;shortName;Rifle Team;moveRange;1;antiPersonnelRange;5;antiTankRange;6;defendValue;0;armored;FALSE;armyName;United States;image;null
+name;M6 Heavy Tank;shortName;Heavy Tank;moveRange;2;antiPersonnelRange;10;antiTankRange;7;defendValue;4;armored;TRUE;armyName;United States;image;null
+name;T14 Assault Tank;shortName;Assault Tank;moveRange;2;antiPersonnelRange;9;antiTankRange;7;defendValue;6;armored;TRUE;armyName;United States;image;null
+name;T28 Heavy Tank;shortName;T28 Heavy Tank;moveRange;1;antiPersonnelRange;15;antiTankRange;12;defendValue;11;armored;TRUE;armyName;United States;image;null
+name;T95 Heavy Tank;shortName;T95 Heavy Tank;moveRange;1;antiPersonnelRange;15;antiTankRange;12;defendValue;11;armored;TRUE;armyName;United States;image;null
+name;Vickers Light Mk II;shortName;Vickers;moveRange;2;antiPersonnelRange;5;antiTankRange;2;defendValue;1;armored;TRUE;armyName;United Kingdom;image;null
+name;Vickers Light Mk VIB;shortName;Vickers;moveRange;2;antiPersonnelRange;5;antiTankRange;2;defendValue;1;armored;TRUE;armyName;United Kingdom;image;null
+name;Vickers Light Mk VIC;shortName;Vickers;moveRange;2;antiPersonnelRange;4;antiTankRange;2;defendValue;1;armored;TRUE;armyName;United Kingdom;image;null
+name;Tetrarch;shortName;Tetrarch;moveRange;3;antiPersonnelRange;4;antiTankRange;3;defendValue;1;armored;TRUE;armyName;United Kingdom;image;null
+name;Harry Hopkins;shortName;Hopkins;moveRange;2;antiPersonnelRange;4;antiTankRange;3;defendValue;2;armored;TRUE;armyName;United Kingdom;image;null
+name;A9 Cruiser;shortName;Cruiser;moveRange;2;antiPersonnelRange;4;antiTankRange;3;defendValue;1;armored;TRUE;armyName;United Kingdom;image;null
+name;A10 Cruiser;shortName;Cruiser;moveRange;1;antiPersonnelRange;4;antiTankRange;3;defendValue;1;armored;TRUE;armyName;United Kingdom;image;null
+name;A13 Cruiser Mk I;shortName;Cruiser;moveRange;2;antiPersonnelRange;4;antiTankRange;3;defendValue;1;armored;TRUE;armyName;United Kingdom;image;null
+name;A13 Cruiser Mk II;shortName;Cruiser;moveRange;2;antiPersonnelRange;4;antiTankRange;3;defendValue;1;armored;TRUE;armyName;United Kingdom;image;null
+name;Covenanter;shortName;Covenanter;moveRange;2;antiPersonnelRange;4;antiTankRange;3;defendValue;1;armored;TRUE;armyName;United Kingdom;image;null
+name;Crusader Mk I;shortName;Crusader;moveRange;3;antiPersonnelRange;4;antiTankRange;3;defendValue;1;armored;TRUE;armyName;United Kingdom;image;null
+name;Crusader Mk II;shortName;Crusader;moveRange;3;antiPersonnelRange;4;antiTankRange;3;defendValue;1;armored;TRUE;armyName;United Kingdom;image;null
+name;Crusader Mk III;shortName;Crusader;moveRange;3;antiPersonnelRange;4;antiTankRange;5;defendValue;2;armored;TRUE;armyName;United Kingdom;image;null
+name;Cavalier;shortName;Cavalier;moveRange;2;antiPersonnelRange;4;antiTankRange;5;defendValue;2;armored;TRUE;armyName;United Kingdom;image;null
+name;Centaur;shortName;Centaur;moveRange;2;antiPersonnelRange;4;antiTankRange;5;defendValue;2;armored;TRUE;armyName;United Kingdom;image;null
+name;Cromwell I-V;shortName;Cromwell;moveRange;3;antiPersonnelRange;4;antiTankRange;5;defendValue;2;armored;TRUE;armyName;United Kingdom;image;null
+name;Cromwell VII;shortName;Cromwell;moveRange;3;antiPersonnelRange;9;antiTankRange;6;defendValue;3;armored;TRUE;armyName;United Kingdom;image;null
+name;Comet;shortName;Comet;moveRange;3;antiPersonnelRange;10;antiTankRange;9;defendValue;2;armored;TRUE;armyName;United Kingdom;image;null
+name;Centurion Mk I;shortName;Centurion;moveRange;2;antiPersonnelRange;10;antiTankRange;9;defendValue;5;armored;TRUE;armyName;United Kingdom;image;null
+name;A11 Matilda I;shortName;Matilda;moveRange;1;antiPersonnelRange;4;antiTankRange;1;defendValue;2;armored;TRUE;armyName;United Kingdom;image;null
+name;A12 Matilda II;shortName;Matilda;moveRange;1;antiPersonnelRange;4;antiTankRange;3;defendValue;4;armored;TRUE;armyName;United Kingdom;image;null
+name;Valentine Mk I–VII;shortName;Valentine;moveRange;1;antiPersonnelRange;4;antiTankRange;3;defendValue;2;armored;TRUE;armyName;United Kingdom;image;null
+name;Valentine Mk VIII;shortName;Valentine;moveRange;1;antiPersonnelRange;4;antiTankRange;5;defendValue;2;armored;TRUE;armyName;United Kingdom;image;null
+name;Valentine Mk XI;shortName;Valentine;moveRange;1;antiPersonnelRange;9;antiTankRange;6;defendValue;2;armored;TRUE;armyName;United Kingdom;image;null
+name;Churchill Mk I;shortName;Churchill;moveRange;1;antiPersonnelRange;5;antiTankRange;3;defendValue;3;armored;TRUE;armyName;United Kingdom;image;null
+name;Churchill Mk III;shortName;Churchill;moveRange;1;antiPersonnelRange;4;antiTankRange;5;defendValue;3;armored;TRUE;armyName;United Kingdom;image;null
+name;Churchill Mk VII;shortName;Churchill;moveRange;1;antiPersonnelRange;9;antiTankRange;6;defendValue;5;armored;TRUE;armyName;United Kingdom;image;null
+name;M3 Honey;shortName;Honey;moveRange;3;antiPersonnelRange;5;antiTankRange;3;defendValue;2;armored;TRUE;armyName;United Kingdom;image;null
+name;M3 Grant;shortName;Grant;moveRange;2;antiPersonnelRange;9;antiTankRange;6;defendValue;2;armored;TRUE;armyName;United Kingdom;image;null
+name;Sherman Firefly;shortName;FireFly;moveRange;2;antiPersonnelRange;10;antiTankRange;9;defendValue;3;armored;TRUE;armyName;United Kingdom;image;null
+name;Archer;shortName;Archer;moveRange;1;antiPersonnelRange;10;antiTankRange;9;defendValue;1;armored;TRUE;armyName;United Kingdom;image;null
+name;Challenger;shortName;Challenger;moveRange;2;antiPersonnelRange;10;antiTankRange;9;defendValue;3;armored;TRUE;armyName;United Kingdom;image;null
+name;Bishop;shortName;Bishop;moveRange;1;antiPersonnelRange;13;antiTankRange;2;defendValue;2;armored;TRUE;armyName;United Kingdom;image;null
+name;Sexton;shortName;Sexton;moveRange;2;antiPersonnelRange;13;antiTankRange;2;defendValue;2;armored;TRUE;armyName;United Kingdom;image;null
+name;Daimler Armoured Car;shortName;Daimler;moveRange;4;antiPersonnelRange;4;antiTankRange;3;defendValue;1;armored;TRUE;armyName;United Kingdom;image;null
+name;Humber Armoured Car;shortName;Humber;moveRange;3;antiPersonnelRange;4;antiTankRange;2;defendValue;1;armored;TRUE;armyName;United Kingdom;image;null
+name;AEC Armoured Car;shortName;AEC;moveRange;3;antiPersonnelRange;4;antiTankRange;5;defendValue;1;armored;TRUE;armyName;United Kingdom;image;null
+name;Daimler Dingo Scout Car;shortName;Dingo;moveRange;4;antiPersonnelRange;3;antiTankRange;0;defendValue;1;armored;TRUE;armyName;United Kingdom;image;null
+name;Universal Bren Carrier;shortName;Bren;moveRange;2;antiPersonnelRange;3;antiTankRange;0;defendValue;1;armored;TRUE;armyName;United Kingdom;image;null
+name;2 Pounder;shortName;Pounder;moveRange;1;antiPersonnelRange;0;antiTankRange;3;defendValue;0;armored;FALSE;armyName;United Kingdom;image;null
+name;6 Pounder;shortName;Pounder;moveRange;1;antiPersonnelRange;0;antiTankRange;5;defendValue;0;armored;FALSE;armyName;United Kingdom;image;null
+name;17 Pounder;shortName;Pounder;moveRange;0;antiPersonnelRange;10;antiTankRange;9;defendValue;0;armored;FALSE;armyName;United Kingdom;image;null
+name;Bofors 40mm AA Gun;shortName;Bofors;moveRange;0;antiPersonnelRange;12;antiTankRange;3;defendValue;0;armored;FALSE;armyName;United Kingdom;image;null
+name;British Light Truck;shortName;Light Truck;moveRange;3;antiPersonnelRange;0;antiTankRange;0;defendValue;0;armored;FALSE;armyName;United Kingdom;image;null
+name;British Med Truck;shortName;Medium Truck;moveRange;3;antiPersonnelRange;0;antiTankRange;0;defendValue;0;armored;FALSE;armyName;United Kingdom;image;null
+name;British Heavy Truck;shortName;Heavy Truck;moveRange;3;antiPersonnelRange;0;antiTankRange;0;defendValue;0;armored;FALSE;armyName;United Kingdom;image;null
+name;British Infantry Squad;shortName;Infantry Squad;moveRange;1;antiPersonnelRange;4;antiTankRange;0;defendValue;1;armored;FALSE;armyName;United Kingdom;image;null
+name;British Engineer Squad;shortName;Engineer Team;moveRange;1;antiPersonnelRange;5;antiTankRange;1;defendValue;1;armored;FALSE;armyName;United Kingdom;image;null
+name;British Light MG Team;shortName;MG Team;moveRange;1;antiPersonnelRange;3;antiTankRange;0;defendValue;0;armored;FALSE;armyName;United Kingdom;image;null
+name;British Medium MG Team;shortName;MG Team;moveRange;1;antiPersonnelRange;5;antiTankRange;1;defendValue;1;armored;FALSE;armyName;United Kingdom;image;null
+name;British Heavy MG Team;shortName;MG Team;moveRange;1;antiPersonnelRange;9;antiTankRange;1;defendValue;1;armored;FALSE;armyName;United Kingdom;image;null
+name;British Light Mortar Team;shortName;Mortar Team;moveRange;1;antiPersonnelRange;4;antiTankRange;0;defendValue;0;armored;FALSE;armyName;United Kingdom;image;null
+name;British Medium Mortar Team;shortName;Mortar Team;moveRange;1;antiPersonnelRange;7;antiTankRange;1;defendValue;1;armored;FALSE;armyName;United Kingdom;image;null
+name;British Heavy Mortar Team;shortName;Mortar Team;moveRange;0;antiPersonnelRange;10;antiTankRange;2;defendValue;1;armored;FALSE;armyName;United Kingdom;image;null
+name;Boys Anti-Tank Rifle Team;shortName;Rifle Team;moveRange;1;antiPersonnelRange;1;antiTankRange;2;defendValue;0;armored;FALSE;armyName;United Kingdom;image;null
+name;PIAT Team;shortName;PIAT;moveRange;1;antiPersonnelRange;2;antiTankRange;6;defendValue;0;armored;FALSE;armyName;United Kingdom;image;null
+name;TOG;shortName;TOG;moveRange;1;antiPersonnelRange;5;antiTankRange;3;defendValue;2;armored;TRUE;armyName;United Kingdom;image;null
+name;Black Prince;shortName;Black Prince;moveRange;1;antiPersonnelRange;10;antiTankRange;9;defendValue;5;armored;TRUE;armyName;United Kingdom;image;null
+name;A33 Assault Tank;shortName;Assault Tank;moveRange;2;antiPersonnelRange;10;antiTankRange;9;defendValue;4;armored;TRUE;armyName;United Kingdom;image;null
+name;Valiant;shortName;Valiant;moveRange;1;antiPersonnelRange;10;antiTankRange;9;defendValue;4;armored;TRUE;armyName;United Kingdom;image;null
+name;Tortoise;shortName;Tortoise;moveRange;1;antiPersonnelRange;15;antiTankRange;11;defendValue;8;armored;TRUE;armyName;United Kingdom;image;null
+name;BT5;shortName;BT5 Tank;moveRange;3;antiPersonnelRange;6;antiTankRange;4;defendValue;1;armored;TRUE;armyName;Soviet Union;image;null
+name;BT7;shortName;BT7 Tank;moveRange;3;antiPersonnelRange;6;antiTankRange;4;defendValue;2;armored;TRUE;armyName;Soviet Union;image;null
+name;T26B;shortName;T26B Tank;moveRange;2;antiPersonnelRange;4;antiTankRange;1;defendValue;1;armored;TRUE;armyName;Soviet Union;image;null
+name;T26S;shortName;T26S Tank;moveRange;2;antiPersonnelRange;6;antiTankRange;4;defendValue;2;armored;TRUE;armyName;Soviet Union;image;null
+name;T28;shortName;T28 Tank;moveRange;2;antiPersonnelRange;10;antiTankRange;1;defendValue;1;armored;TRUE;armyName;Soviet Union;image;null
+name;T28B;shortName;T28 B Tank;moveRange;2;antiPersonnelRange;10;antiTankRange;4;defendValue;3;armored;TRUE;armyName;Soviet Union;image;null
+name;T34 76mm A;shortName;T34 Tank;moveRange;2;antiPersonnelRange;11;antiTankRange;6;defendValue;3;armored;TRUE;armyName;Soviet Union;image;null
+name;T34 76mm B-D;shortName;T34 Tank;moveRange;2;antiPersonnelRange;11;antiTankRange;6;defendValue;4;armored;TRUE;armyName;Soviet Union;image;null
+name;T34 85mm;shortName;T34 Tank;moveRange;2;antiPersonnelRange;11;antiTankRange;7;defendValue;4;armored;TRUE;armyName;Soviet Union;image;null
+name;T35;shortName;T35 Tank;moveRange;2;antiPersonnelRange;10;antiTankRange;1;defendValue;1;armored;TRUE;armyName;Soviet Union;image;null
+name;T37;shortName;T37 Tank;moveRange;2;antiPersonnelRange;3;antiTankRange;0;defendValue;1;armored;TRUE;armyName;Soviet Union;image;null
+name;T38;shortName;T38 Tank;moveRange;2;antiPersonnelRange;3;antiTankRange;0;defendValue;1;armored;TRUE;armyName;Soviet Union;image;null
+name;T40;shortName;T40 Tank;moveRange;2;antiPersonnelRange;3;antiTankRange;2;defendValue;1;armored;TRUE;armyName;Soviet Union;image;null
+name;T60;shortName;T60 Tank;moveRange;2;antiPersonnelRange;3;antiTankRange;2;defendValue;1;armored;TRUE;armyName;Soviet Union;image;null
+name;T70;shortName;T70 Tank;moveRange;2;antiPersonnelRange;6;antiTankRange;4;defendValue;2;armored;TRUE;armyName;Soviet Union;image;null
+name;KV1A;shortName;KV1A Heavy Tank;moveRange;2;antiPersonnelRange;11;antiTankRange;6;defendValue;5;armored;TRUE;armyName;Soviet Union;image;null
+name;KV1B;shortName;KV1B Heavy Tank;moveRange;2;antiPersonnelRange;11;antiTankRange;6;defendValue;5;armored;TRUE;armyName;Soviet Union;image;null
+name;KV1C;shortName;KV1C Heavy Tank;moveRange;2;antiPersonnelRange;11;antiTankRange;6;defendValue;4;armored;TRUE;armyName;Soviet Union;image;null
+name;KV2;shortName;KV2 Heavy Tank;moveRange;1;antiPersonnelRange;22;antiTankRange;3;defendValue;4;armored;TRUE;armyName;Soviet Union;image;null
+name;KV85;shortName;KV85 Heavy Tank;moveRange;2;antiPersonnelRange;11;antiTankRange;7;defendValue;5;armored;TRUE;armyName;Soviet Union;image;null
+name;JS1;shortName;Joseph Stalin;moveRange;2;antiPersonnelRange;15;antiTankRange;10;defendValue;5;armored;TRUE;armyName;Soviet Union;image;null
+name;JS2;shortName;Joseph Stalin;moveRange;2;antiPersonnelRange;16;antiTankRange;12;defendValue;6;armored;TRUE;armyName;Soviet Union;image;null
+name;JS3;shortName;Joseph Stalin;moveRange;2;antiPersonnelRange;16;antiTankRange;12;defendValue;11;armored;TRUE;armyName;Soviet Union;image;null
+name;SU76;shortName;Tank Destroyer;moveRange;2;antiPersonnelRange;11;antiTankRange;6;defendValue;2;armored;TRUE;armyName;Soviet Union;image;null
+name;SU85;shortName;Tank Destroyer;moveRange;2;antiPersonnelRange;11;antiTankRange;7;defendValue;4;armored;TRUE;armyName;Soviet Union;image;null
+name;SU100;shortName;Tank Destroyer;moveRange;2;antiPersonnelRange;15;antiTankRange;10;defendValue;6;armored;TRUE;armyName;Soviet Union;image;null
+name;SU122;shortName;Tank Destroyer;moveRange;2;antiPersonnelRange;16;antiTankRange;9;defendValue;4;armored;TRUE;armyName;Soviet Union;image;null
+name;SU152;shortName;Tank Destroyer;moveRange;2;antiPersonnelRange;22;antiTankRange;7;defendValue;4;armored;TRUE;armyName;Soviet Union;image;null
+name;JSU122;shortName;Assault Gun;moveRange;2;antiPersonnelRange;30;antiTankRange;12;defendValue;7;armored;TRUE;armyName;Soviet Union;image;null
+name;JSU152;shortName;Assault Gun;moveRange;2;antiPersonnelRange;29;antiTankRange;12;defendValue;7;armored;TRUE;armyName;Soviet Union;image;null
+name;BA10;shortName;Armoured Car;moveRange;3;antiPersonnelRange;6;antiTankRange;4;defendValue;1;armored;TRUE;armyName;Soviet Union;image;null
+name;BA32;shortName;Armoured Car;moveRange;3;antiPersonnelRange;6;antiTankRange;4;defendValue;1;armored;TRUE;armyName;Soviet Union;image;null
+name;BA64;shortName;Armoured Car;moveRange;4;antiPersonnelRange;3;antiTankRange;0;defendValue;0;armored;TRUE;armyName;Soviet Union;image;null
+name;Soviet 37mm Cannon;shortName;Cannon;moveRange;1;antiPersonnelRange;0;antiTankRange;3;defendValue;0;armored;FALSE;armyName;Soviet Union;image;null
+name;Soviet 45mm Cannon;shortName;Cannon;moveRange;1;antiPersonnelRange;6;antiTankRange;4;defendValue;0;armored;FALSE;armyName;Soviet Union;image;null
+name;Soviet 57mm Cannon;shortName;Cannon;moveRange;1;antiPersonnelRange;10;antiTankRange;5;defendValue;0;armored;FALSE;armyName;Soviet Union;image;null
+name;Soviet 76.2mm Cannon;shortName;Cannon;moveRange;0;antiPersonnelRange;11;antiTankRange;6;defendValue;0;armored;FALSE;armyName;Soviet Union;image;null
+name;Soviet 100mm Cannon;shortName;Cannon;moveRange;0;antiPersonnelRange;15;antiTankRange;10;defendValue;0;armored;FALSE;armyName;Soviet Union;image;null
+name;Soviet Light Truck;shortName;Light Truck;moveRange;3;antiPersonnelRange;0;antiTankRange;0;defendValue;0;armored;FALSE;armyName;Soviet Union;image;null
+name;Soviet Med Truck;shortName;Medium Truck;moveRange;3;antiPersonnelRange;0;antiTankRange;0;defendValue;0;armored;FALSE;armyName;Soviet Union;image;null
+name;Soviet Heavy Truck;shortName;Heavy Truck;moveRange;3;antiPersonnelRange;0;antiTankRange;0;defendValue;0;armored;FALSE;armyName;Soviet Union;image;null
+name;GAZ 67 Jeep;shortName;Jeep;moveRange;3;antiPersonnelRange;0;antiTankRange;0;defendValue;0;armored;FALSE;armyName;Soviet Union;image;null
+name;Soviet Rifle Squad;shortName;Rifle Squad;moveRange;1;antiPersonnelRange;4;antiTankRange;0;defendValue;1;armored;FALSE;armyName;Soviet Union;image;null
+name;SMG Squad;shortName;SMG Squad;moveRange;1;antiPersonnelRange;4;antiTankRange;0;defendValue;1;armored;FALSE;armyName;Soviet Union;image;null
+name;Soviet Engineer Squad;shortName;Engineer Squad;moveRange;1;antiPersonnelRange;5;antiTankRange;1;defendValue;1;armored;FALSE;armyName;Soviet Union;image;null
+name;Soviet Cavalry Section;shortName;Cavalry Section;moveRange;2;antiPersonnelRange;4;antiTankRange;0;defendValue;1;armored;FALSE;armyName;Soviet Union;image;null
+name;Soviet Light MG Team;shortName;MG Team;moveRange;1;antiPersonnelRange;1;antiTankRange;1;defendValue;0;armored;FALSE;armyName;Soviet Union;image;null
+name;Soviet Medium MG Team;shortName;MG Team;moveRange;1;antiPersonnelRange;5;antiTankRange;1;defendValue;0;armored;FALSE;armyName;Soviet Union;image;null
+name;Soviet Heavy MG Team;shortName;MG Team;moveRange;1;antiPersonnelRange;9;antiTankRange;2;defendValue;1;armored;FALSE;armyName;Soviet Union;image;null
+name;Soviet Light Mortar Team;shortName;Mortar Team;moveRange;1;antiPersonnelRange;4;antiTankRange;0;defendValue;0;armored;FALSE;armyName;Soviet Union;image;null
+name;Soviet Medium Mortar Team;shortName;Mortar Team;moveRange;1;antiPersonnelRange;7;antiTankRange;1;defendValue;1;armored;FALSE;armyName;Soviet Union;image;null
+name;Soviet Heavy Mortar Team;shortName;Mortar Team;moveRange;0;antiPersonnelRange;10;antiTankRange;2;defendValue;1;armored;FALSE;armyName;Soviet Union;image;null
+name;Anti-Tank Rifle Team;shortName;Rifle Team;moveRange;1;antiPersonnelRange;1;antiTankRange;2;defendValue;0;armored;FALSE;armyName;Soviet Union;image;null
+name;Renault FT17;shortName;Renault FT17 Tank;moveRange;1;antiPersonnelRange;4;antiTankRange;2;defendValue;1;armored;TRUE;armyName;France;image;null
+name;Char 2C;shortName;2C Tank;moveRange;1;antiPersonnelRange;6;antiTankRange;3;defendValue;2;armored;TRUE;armyName;France;image;null
+name;Char D1;shortName;D1 Tank;moveRange;1;antiPersonnelRange;5;antiTankRange;2;defendValue;2;armored;TRUE;armyName;France;image;null
+name;Char D2;shortName;D2 Tank;moveRange;1;antiPersonnelRange;5;antiTankRange;2;defendValue;2;armored;TRUE;armyName;France;image;null
+name;Char B1;shortName;B1 Tank;moveRange;1;antiPersonnelRange;5;antiTankRange;4;defendValue;2;armored;TRUE;armyName;France;image;null
+name;AMC 35;shortName;AMC Tank;moveRange;2;antiPersonnelRange;5;antiTankRange;2;defendValue;1;armored;TRUE;armyName;France;image;null
+name;Renault R35;shortName;Renault R35 Tank;moveRange;1;antiPersonnelRange;5;antiTankRange;2;defendValue;3;armored;TRUE;armyName;France;image;null
+name;Hotchkiss H35;shortName;Hotchkiss;moveRange;2;antiPersonnelRange;5;antiTankRange;2;defendValue;2;armored;TRUE;armyName;France;image;null
+name;Hotchkiss H39;shortName;Hotchkiss;moveRange;2;antiPersonnelRange;5;antiTankRange;3;defendValue;2;armored;TRUE;armyName;France;image;null
+name;Somua S35;shortName;Somua;moveRange;2;antiPersonnelRange;5;antiTankRange;4;defendValue;2;armored;TRUE;armyName;France;image;null
+name;FCM 36;shortName;FCM Tank;moveRange;1;antiPersonnelRange;5;antiTankRange;2;defendValue;2;armored;TRUE;armyName;France;image;null
+name;Panhard 178;shortName;Panhard;moveRange;3;antiPersonnelRange;4;antiTankRange;3;defendValue;1;armored;FALSE;armyName;France;image;null
+name;UE Tractor;shortName;Tractor;moveRange;2;antiPersonnelRange;0;antiTankRange;0;defendValue;0;armored;FALSE;armyName;France;image;null
+name;Lorraine Tractor;shortName;Tractor;moveRange;2;antiPersonnelRange;0;antiTankRange;0;defendValue;0;armored;FALSE;armyName;France;image;null
+name;French 25mm Cannon;shortName;Cannon;moveRange;1;antiPersonnelRange;0;antiTankRange;3;defendValue;0;armored;FALSE;armyName;France;image;null
+name;French 47mm Cannon;shortName;Cannon;moveRange;1;antiPersonnelRange;0;antiTankRange;4;defendValue;0;armored;FALSE;armyName;France;image;null
+name;French Light Truck;shortName;Truck;moveRange;3;antiPersonnelRange;0;antiTankRange;0;defendValue;0;armored;FALSE;armyName;France;image;null
+name;French Med Truck;shortName;Truck;moveRange;3;antiPersonnelRange;0;antiTankRange;0;defendValue;0;armored;FALSE;armyName;France;image;null
+name;French Heavy Truck;shortName;Truck;moveRange;3;antiPersonnelRange;0;antiTankRange;0;defendValue;0;armored;FALSE;armyName;France;image;null
+name;French Infantry Squad;shortName;Infantry Squad;moveRange;1;antiPersonnelRange;4;antiTankRange;0;defendValue;1;armored;FALSE;armyName;France;image;null
+name;French Engineer Squad;shortName;Engineer Squad;moveRange;1;antiPersonnelRange;5;antiTankRange;1;defendValue;1;armored;FALSE;armyName;France;image;null
+name;French Light MG Team;shortName;MG Team;moveRange;1;antiPersonnelRange;3;antiTankRange;0;defendValue;0;armored;FALSE;armyName;France;image;null
+name;French Medium MG Team;shortName;MG Team;moveRange;1;antiPersonnelRange;5;antiTankRange;1;defendValue;1;armored;FALSE;armyName;France;image;null
+name;French Heavy MG Team;shortName;MG Team;moveRange;1;antiPersonnelRange;6;antiTankRange;1;defendValue;1;armored;FALSE;armyName;France;image;null
+name;French Light Mortar Team;shortName;Mortar Team;moveRange;1;antiPersonnelRange;4;antiTankRange;0;defendValue;0;armored;FALSE;armyName;France;image;null
+name;French Medium Mortar Team;shortName;Mortar Team;moveRange;1;antiPersonnelRange;7;antiTankRange;1;defendValue;1;armored;FALSE;armyName;France;image;null
+name;French Heavy Mortar Team;shortName;Mortar Team;moveRange;0;antiPersonnelRange;10;antiTankRange;2;defendValue;1;armored;FALSE;armyName;France;image;null
+name;TKS Tankette;shortName;Tankette;moveRange;2;antiPersonnelRange;3;antiTankRange;0;defendValue;0;armored;TRUE;armyName;Poland;image;null
+name;TK3 Tankette;shortName;Tankette;moveRange;2;antiPersonnelRange;3;antiTankRange;0;defendValue;0;armored;TRUE;armyName;Poland;image;null
+name;TKS zKM 20mm;shortName;Tankette;moveRange;2;antiPersonnelRange;2;antiTankRange;2;defendValue;0;armored;TRUE;armyName;Poland;image;null
+name;VAU 33;shortName;Tankette;moveRange;2;antiPersonnelRange;5;antiTankRange;1;defendValue;1;armored;TRUE;armyName;Poland;image;null
+name;7TP dw;shortName;Tankette;moveRange;2;antiPersonnelRange;5;antiTankRange;1;defendValue;1;armored;TRUE;armyName;Poland;image;null
+name;7TP;shortName;Tankette;moveRange;2;antiPersonnelRange;4;antiTankRange;3;defendValue;2;armored;TRUE;armyName;Poland;image;null
+name;Pancerny Wz.29;shortName;Pancemy;moveRange;3;antiPersonnelRange;3;antiTankRange;0;defendValue;0;armored;FALSE;armyName;Poland;image;null
+name;Pancerny Wz.34;shortName;Pancemy;moveRange;3;antiPersonnelRange;3;antiTankRange;0;defendValue;0;armored;FALSE;armyName;Poland;image;null
+name;Bofors 37mm;shortName;Bofors;moveRange;1;antiPersonnelRange;0;antiTankRange;3;defendValue;0;armored;FALSE;armyName;Poland;image;null
+name;Polish Light Truck;shortName;Light Truck;moveRange;3;antiPersonnelRange;0;antiTankRange;0;defendValue;0;armored;FALSE;armyName;Poland;image;null
+name;Polish Med Truck;shortName;Medium Truck;moveRange;3;antiPersonnelRange;0;antiTankRange;0;defendValue;0;armored;FALSE;armyName;Poland;image;null
+name;Polish Heavy Truck;shortName;Heavy Truck;moveRange;3;antiPersonnelRange;0;antiTankRange;0;defendValue;0;armored;FALSE;armyName;Poland;image;null
+name;Polish Infantry Squad;shortName;Infantry Squad;moveRange;1;antiPersonnelRange;4;antiTankRange;0;defendValue;1;armored;FALSE;armyName;Poland;image;null
+name;Polish Engineer Squad;shortName;Engineer Squad;moveRange;1;antiPersonnelRange;5;antiTankRange;1;defendValue;1;armored;FALSE;armyName;Poland;image;null
+name;Polish Light MG Team;shortName;MG Team;moveRange;1;antiPersonnelRange;3;antiTankRange;0;defendValue;0;armored;FALSE;armyName;Poland;image;null
+name;Polish Medium MG Team;shortName;MG Team;moveRange;1;antiPersonnelRange;5;antiTankRange;1;defendValue;1;armored;FALSE;armyName;Poland;image;null
+name;Polish Heavy MG Team;shortName;MG Team;moveRange;1;antiPersonnelRange;6;antiTankRange;1;defendValue;1;armored;FALSE;armyName;Poland;image;null
+name;Polish Light Mortar Team;shortName;Mortar Team;moveRange;1;antiPersonnelRange;4;antiTankRange;0;defendValue;0;armored;FALSE;armyName;Poland;image;null
+name;Polish Medium Mortar Team;shortName;Mortar Team;moveRange;1;antiPersonnelRange;7;antiTankRange;1;defendValue;1;armored;FALSE;armyName;Poland;image;null
+name;Polish Heavy Mortar Team;shortName;Mortar Team;moveRange;0;antiPersonnelRange;10;antiTankRange;2;defendValue;1;armored;FALSE;armyName;Poland;image;null
+name;PzKpfw I Ausf A - B;shortName;Panzer;moveRange;2;antiPersonnelRange;4;antiTankRange;0;defendValue;1;armored;TRUE;armyName;Germany;image;null
+name;PzKpfw I VK. 1801;shortName;Panzer;moveRange;1;antiPersonnelRange;4;antiTankRange;0;defendValue;3;armored;TRUE;armyName;Germany;image;null
+name;PzKpfw II Ausf A - E;shortName;Panzer;moveRange;2;antiPersonnelRange;3;antiTankRange;2;defendValue;1;armored;TRUE;armyName;Germany;image;null
+name;PzKpfw II Ausf F - G;shortName;Panzer;moveRange;2;antiPersonnelRange;3;antiTankRange;2;defendValue;1;armored;TRUE;armyName;Germany;image;null
+name;PzKpfw II Ausf L Lynx;shortName;Lynx;moveRange;3;antiPersonnelRange;3;antiTankRange;2;defendValue;1;armored;TRUE;armyName;Germany;image;null
+name;PzKpfw 35t;shortName;Panzer;moveRange;2;antiPersonnelRange;4;antiTankRange;3;defendValue;1;armored;TRUE;armyName;Germany;image;null
+name;PzKpfw 38t;shortName;Panzer;moveRange;2;antiPersonnelRange;4;antiTankRange;3;defendValue;1;armored;TRUE;armyName;Germany;image;null
+name;PzKpfw III Ausf A - F;shortName;Panzer;moveRange;2;antiPersonnelRange;4;antiTankRange;3;defendValue;1;armored;TRUE;armyName;Germany;image;null
+name;PzKpfw III Ausf G - H;shortName;Panzer;moveRange;2;antiPersonnelRange;6;antiTankRange;4;defendValue;1;armored;TRUE;armyName;Germany;image;null
+name;PzKpfw III Ausf J - L;shortName;Panzer;moveRange;2;antiPersonnelRange;6;antiTankRange;5;defendValue;3;armored;TRUE;armyName;Germany;image;null
+name;PzKpfw III Ausf M;shortName;Panzer;moveRange;2;antiPersonnelRange;6;antiTankRange;5;defendValue;2;armored;TRUE;armyName;Germany;image;null
+name;PzKpfw III Ausf N;shortName;Panzer;moveRange;2;antiPersonnelRange;9;antiTankRange;2;defendValue;2;armored;TRUE;armyName;Germany;image;null
+name;PzKpfw IV Ausf A - C;shortName;Panzer;moveRange;2;antiPersonnelRange;9;antiTankRange;1;defendValue;1;armored;TRUE;armyName;Germany;image;null
+name;PzKpfw IV Ausf D - F1;shortName;Panzer;moveRange;2;antiPersonnelRange;9;antiTankRange;1;defendValue;1;armored;TRUE;armyName;Germany;image;null
+name;PzKpfw IV Ausf F2  -G;shortName;Panzer;moveRange;2;antiPersonnelRange;9;antiTankRange;6;defendValue;2;armored;TRUE;armyName;Germany;image;null
+name;PzKpfw IV Ausf H - J;shortName;Panzer;moveRange;2;antiPersonnelRange;9;antiTankRange;6;defendValue;3;armored;TRUE;armyName;Germany;image;null
+name;PzKpfw V Panther D - A;shortName;Panther;moveRange;2;antiPersonnelRange;10;antiTankRange;10;defendValue;5;armored;TRUE;armyName;Germany;image;null
+name;PzKpfw V Panther G;shortName;Panther;moveRange;2;antiPersonnelRange;10;antiTankRange;10;defendValue;5;armored;TRUE;armyName;Germany;image;null
+name;PzKpfw VI Tiger I;shortName;Tiger;moveRange;2;antiPersonnelRange;12;antiTankRange;7;defendValue;4;armored;TRUE;armyName;Germany;image;null
+name;PzKpfw VI Tiger II;shortName;KingTiger;moveRange;2;antiPersonnelRange;12;antiTankRange;10;defendValue;6;armored;TRUE;armyName;Germany;image;null
+name;PanzerJager I;shortName;PanzerJager;moveRange;2;antiPersonnelRange;4;antiTankRange;4;defendValue;1;armored;TRUE;armyName;Germany;image;null
+name;Marder I;shortName;Marder;moveRange;2;antiPersonnelRange;9;antiTankRange;6;defendValue;0;armored;TRUE;armyName;Germany;image;null
+name;Marder II;shortName;Marder;moveRange;2;antiPersonnelRange;9;antiTankRange;6;defendValue;1;armored;TRUE;armyName;Germany;image;null
+name;Marder III;shortName;Marder;moveRange;2;antiPersonnelRange;9;antiTankRange;6;defendValue;1;armored;TRUE;armyName;Germany;image;null
+name;Hetzer;shortName;Hetzer;moveRange;2;antiPersonnelRange;9;antiTankRange;6;defendValue;4;armored;TRUE;armyName;Germany;image;null
+name;StuG III Ausf B - D;shortName;StuG;moveRange;2;antiPersonnelRange;9;antiTankRange;1;defendValue;1;armored;TRUE;armyName;Germany;image;null
+name;StuG III Ausf G - StuG IV;shortName;StuG;moveRange;2;antiPersonnelRange;9;antiTankRange;6;defendValue;3;armored;TRUE;armyName;Germany;image;null
+name;Panzerjager IV Kurtz L/48;shortName;Panzerjager;moveRange;2;antiPersonnelRange;9;antiTankRange;6;defendValue;4;armored;TRUE;armyName;Germany;image;null
+name;Panzerjager IV Lang L/70;shortName;Panzerjager;moveRange;2;antiPersonnelRange;10;antiTankRange;10;defendValue;4;armored;TRUE;armyName;Germany;image;null
+name;Nashorn;shortName;Nashorn;moveRange;2;antiPersonnelRange;12;antiTankRange;10;defendValue;1;armored;TRUE;armyName;Germany;image;null
+name;Flakpanzer IV;shortName;Flakpanzer;moveRange;2;antiPersonnelRange;15;antiTankRange;3;defendValue;3;armored;TRUE;armyName;Germany;image;null
+name;Jagdpanther;shortName;Jagdpanther;moveRange;2;antiPersonnelRange;12;antiTankRange;10;defendValue;5;armored;TRUE;armyName;Germany;image;null
+name;Elefant;shortName;Elefant;moveRange;2;antiPersonnelRange;12;antiTankRange;10;defendValue;6;armored;TRUE;armyName;Germany;image;null
+name;Jagdtiger;shortName;Jagdtiger;moveRange;2;antiPersonnelRange;15;antiTankRange;12;defendValue;7;armored;TRUE;armyName;Germany;image;null
+name;Wespe;shortName;Wespe;moveRange;2;antiPersonnelRange;15;antiTankRange;2;defendValue;1;armored;TRUE;armyName;Germany;image;null
+name;Hummel;shortName;Hummel;moveRange;2;antiPersonnelRange;18;antiTankRange;4;defendValue;1;armored;TRUE;armyName;Germany;image;null
+name;Maultier;shortName;Maultier;moveRange;2;antiPersonnelRange;24;antiTankRange;3;defendValue;1;armored;TRUE;armyName;Germany;image;null
+name;StuH 43;shortName;StuH;moveRange;2;antiPersonnelRange;15;antiTankRange;3;defendValue;3;armored;TRUE;armyName;Germany;image;null
+name;Brummbaer;shortName;Brummbaer;moveRange;2;antiPersonnelRange;21;antiTankRange;5;defendValue;3;armored;TRUE;armyName;Germany;image;null
+name;Sturmtiger;shortName;Sturmtiger;moveRange;2;antiPersonnelRange;24;antiTankRange;7;defendValue;6;armored;TRUE;armyName;Germany;image;null
+name;SdKfz 250/251;shortName;Fahrzeug;moveRange;2;antiPersonnelRange;3;antiTankRange;0;defendValue;1;armored;TRUE;armyName;Germany;image;null
+name;SdKfz 222;shortName;Fahrzeug;moveRange;3;antiPersonnelRange;3;antiTankRange;2;defendValue;1;armored;TRUE;armyName;Germany;image;null
+name;SdKfz 232;shortName;Fahrzeug;moveRange;3;antiPersonnelRange;3;antiTankRange;2;defendValue;1;armored;TRUE;armyName;Germany;image;null
+name;SdKfz 234/1;shortName;Fahrzeug;moveRange;2;antiPersonnelRange;4;antiTankRange;0;defendValue;2;armored;TRUE;armyName;Germany;image;null
+name;SdKfz 234/2 Puma;shortName;Fahrzeug;moveRange;2;antiPersonnelRange;6;antiTankRange;5;defendValue;2;armored;TRUE;armyName;Germany;image;null
+name;SdKfz 234/3;shortName;Fahrzeug;moveRange;2;antiPersonnelRange;9;antiTankRange;2;defendValue;2;armored;TRUE;armyName;Germany;image;null
+name;SdKfz 234/4;shortName;Fahrzeug;moveRange;2;antiPersonnelRange;9;antiTankRange;6;defendValue;2;armored;TRUE;armyName;Germany;image;null
+name;28mm ATG;shortName;Anti Tank Gun;moveRange;1;antiPersonnelRange;0;antiTankRange;3;defendValue;0;armored;FALSE;armyName;Germany;image;null
+name;37mm PaK 36 ATG;shortName;Anti Tank Gun;moveRange;1;antiPersonnelRange;0;antiTankRange;3;defendValue;0;armored;FALSE;armyName;Germany;image;null
+name;50mm PaK 38 ATG;shortName;Anti Tank Gun;moveRange;1;antiPersonnelRange;5;antiTankRange;5;defendValue;0;armored;FALSE;armyName;Germany;image;null
+name;75mm PaK 40 ATG;shortName;Anti Tank Gun;moveRange;1;antiPersonnelRange;9;antiTankRange;6;defendValue;0;armored;FALSE;armyName;Germany;image;null
+name;88mm FlaK 36 AAG;shortName;Anti Aircraft Gun;moveRange;1;antiPersonnelRange;12;antiTankRange;7;defendValue;0;armored;FALSE;armyName;Germany;image;null
+name;88mm FlaK 36 ATG;shortName;Anti Tank Gun;moveRange;1;antiPersonnelRange;12;antiTankRange;7;defendValue;0;armored;FALSE;armyName;Germany;image;null
+name;88mm PaK 43 ATG;shortName;Anti Tank Gun;moveRange;1;antiPersonnelRange;12;antiTankRange;10;defendValue;0;armored;FALSE;armyName;Germany;image;null
+name;German Light Truck;shortName;Light Truck;moveRange;3;antiPersonnelRange;0;antiTankRange;0;defendValue;0;armored;FALSE;armyName;Germany;image;null
+name;German Med Truck;shortName;Medium Truck;moveRange;3;antiPersonnelRange;0;antiTankRange;0;defendValue;0;armored;FALSE;armyName;Germany;image;null
+name;German Heavy Truck;shortName;Heavy Truck;moveRange;3;antiPersonnelRange;0;antiTankRange;0;defendValue;0;armored;FALSE;armyName;Germany;image;null
+name;Schwimmwagen;shortName;Schwimmwagen;moveRange;3;antiPersonnelRange;0;antiTankRange;0;defendValue;0;armored;FALSE;armyName;Germany;image;null
+name;Kubelwagen;shortName;Kubelwagen;moveRange;3;antiPersonnelRange;0;antiTankRange;0;defendValue;0;armored;FALSE;armyName;Germany;image;null
+name;German Assault Squad;shortName;Assault Tank;moveRange;1;antiPersonnelRange;5;antiTankRange;1;defendValue;1;armored;FALSE;armyName;Germany;image;null
+name;German Engineer Squad;shortName;Engineer Squad;moveRange;1;antiPersonnelRange;5;antiTankRange;1;defendValue;1;armored;FALSE;armyName;Germany;image;null
+name;German Cavalry Section;shortName;Cavalry Section;moveRange;2;antiPersonnelRange;4;antiTankRange;0;defendValue;1;armored;FALSE;armyName;Germany;image;null
+name;German Light MG Team;shortName;MG Team;moveRange;1;antiPersonnelRange;3;antiTankRange;1;defendValue;0;armored;FALSE;armyName;Germany;image;null
+name;German Medium MG Team;shortName;MG Team;moveRange;1;antiPersonnelRange;6;antiTankRange;1;defendValue;0;armored;FALSE;armyName;Germany;image;null
+name;German Heavy MG Team;shortName;MG Team;moveRange;1;antiPersonnelRange;10;antiTankRange;1;defendValue;1;armored;FALSE;armyName;Germany;image;null
+name;German Light Mortar Team;shortName;Mortar Team;moveRange;1;antiPersonnelRange;4;antiTankRange;0;defendValue;0;armored;FALSE;armyName;Germany;image;null
+name;German Medium Mortar Team;shortName;Mortar Team;moveRange;1;antiPersonnelRange;7;antiTankRange;1;defendValue;1;armored;FALSE;armyName;Germany;image;null
+name;German Heavy Mortar Team;shortName;Mortar Team;moveRange;1;antiPersonnelRange;10;antiTankRange;2;defendValue;1;armored;FALSE;armyName;Germany;image;null
+name;German Anti-Tank Rifle Team;shortName;Rifle Team;moveRange;1;antiPersonnelRange;1;antiTankRange;2;defendValue;0;armored;FALSE;armyName;Germany;image;null
+name;Panzerfaust Team;shortName;PanzerFaust;moveRange;1;antiPersonnelRange;3;antiTankRange;12;defendValue;0;armored;FALSE;armyName;Germany;image;null
+name;Panzerschreck Team;shortName;Panzerschreck;moveRange;1;antiPersonnelRange;3;antiTankRange;12;defendValue;0;armored;FALSE;armyName;Germany;image;null
+name;NbFz PzKpfw V;shortName;Panzer;moveRange;2;antiPersonnelRange;9;antiTankRange;1;defendValue;2;armored;TRUE;armyName;Germany;image;null
+name;NbFz PzKpfw VI;shortName;Panzer;moveRange;2;antiPersonnelRange;9;antiTankRange;1;defendValue;2;armored;TRUE;armyName;Germany;image;null
+name;Panther F;shortName;Panther;moveRange;2;antiPersonnelRange;12;antiTankRange;10;defendValue;12;armored;TRUE;armyName;Germany;image;null
+name;Maus;shortName;Maus;moveRange;1;antiPersonnelRange;15;antiTankRange;12;defendValue;12;armored;TRUE;armyName;Germany;image;null
+name;E100;shortName;E100 Panzer;moveRange;1;antiPersonnelRange;15;antiTankRange;12;defendValue;12;armored;TRUE;armyName;Germany;image;null
+name;CV 3/33;shortName;Tankette;moveRange;2;antiPersonnelRange;4;antiTankRange;0;defendValue;1;armored;TRUE;armyName;Italy;image;null
+name;CV 3/35;shortName;Tankette;moveRange;2;antiPersonnelRange;4;antiTankRange;0;defendValue;1;armored;TRUE;armyName;Italy;image;null
+name;L6/40;shortName;L6 Tank;moveRange;2;antiPersonnelRange;3;antiTankRange;2;defendValue;1;armored;TRUE;armyName;Italy;image;null
+name;M11/39;shortName;M11 Tank;moveRange;2;antiPersonnelRange;4;antiTankRange;3;defendValue;1;armored;TRUE;armyName;Italy;image;null
+name;M13/40;shortName;M13 Tank;moveRange;2;antiPersonnelRange;5;antiTankRange;4;defendValue;1;armored;TRUE;armyName;Italy;image;null
+name;M26/40;shortName;M26 Tank;moveRange;2;antiPersonnelRange;5;antiTankRange;4;defendValue;2;armored;TRUE;armyName;Italy;image;null
+name;Semovente 47/32;shortName;Semovente;moveRange;2;antiPersonnelRange;4;antiTankRange;4;defendValue;1;armored;TRUE;armyName;Italy;image;null
+name;Semovente 75/18;shortName;Semovente;moveRange;2;antiPersonnelRange;9;antiTankRange;6;defendValue;1;armored;TRUE;armyName;Italy;image;null
+name;Semovente 90;shortName;Semovente;moveRange;2;antiPersonnelRange;12;antiTankRange;7;defendValue;2;armored;TRUE;armyName;Italy;image;null
+name;Autoblinda 41;shortName;Autoblinda;moveRange;3;antiPersonnelRange;3;antiTankRange;2;defendValue;1;armored;TRUE;armyName;Italy;image;null
+name;Italian 47mm Cannon;shortName;Cannon;moveRange;1;antiPersonnelRange;4;antiTankRange;4;defendValue;0;armored;FALSE;armyName;Italy;image;null
+name;Italian Light Truck;shortName;Light Truck;moveRange;3;antiPersonnelRange;0;antiTankRange;0;defendValue;0;armored;FALSE;armyName;Italy;image;null
+name;Italian Med Truck;shortName;Medium Truck;moveRange;3;antiPersonnelRange;0;antiTankRange;0;defendValue;0;armored;FALSE;armyName;Italy;image;null
+name;Italian Heavy Truck;shortName;Heavy Truck;moveRange;3;antiPersonnelRange;0;antiTankRange;0;defendValue;0;armored;FALSE;armyName;Italy;image;null
+name;Italian Infantry Squad;shortName;Infantry Squad;moveRange;1;antiPersonnelRange;4;antiTankRange;0;defendValue;1;armored;FALSE;armyName;Italy;image;null
+name;Italian Engineer Squad;shortName;Engineer Squad;moveRange;1;antiPersonnelRange;5;antiTankRange;1;defendValue;1;armored;FALSE;armyName;Italy;image;null
+name;Italian Light MG Team;shortName;MG Team;moveRange;1;antiPersonnelRange;2;antiTankRange;0;defendValue;0;armored;FALSE;armyName;Italy;image;null
+name;Italian Medium MG Team;shortName;MG Team;moveRange;1;antiPersonnelRange;4;antiTankRange;1;defendValue;1;armored;FALSE;armyName;Italy;image;null
+name;Italian Heavy MG Team;shortName;MG Team;moveRange;1;antiPersonnelRange;5;antiTankRange;1;defendValue;1;armored;FALSE;armyName;Italy;image;null
+name;Italian Light Mortar Team;shortName;Mortar Team;moveRange;1;antiPersonnelRange;4;antiTankRange;0;defendValue;0;armored;FALSE;armyName;Italy;image;null
+name;Italian Medium Mortar Team;shortName;Mortar Team;moveRange;1;antiPersonnelRange;7;antiTankRange;1;defendValue;1;armored;FALSE;armyName;Italy;image;null
+name;Italian Heavy Mortar Team;shortName;Mortar Team;moveRange;0;antiPersonnelRange;10;antiTankRange;2;defendValue;1;armored;FALSE;armyName;Italy;image;null
+name;Type 89 Chi Ro;shortName;Chi Ro;moveRange;1;antiPersonnelRange;7;antiTankRange;1;defendValue;1;armored;TRUE;armyName;Japan;image;null
+name;Type 94 Tankette;shortName;Tankette;moveRange;2;antiPersonnelRange;5;antiTankRange;0;defendValue;1;armored;TRUE;armyName;Japan;image;null
+name;Type 97 Tankette;shortName;Tankette;moveRange;2;antiPersonnelRange;5;antiTankRange;0;defendValue;1;armored;TRUE;armyName;Japan;image;null
+name;Type 95 Ha Go;shortName;Ha Go;moveRange;2;antiPersonnelRange;4;antiTankRange;3;defendValue;1;armored;TRUE;armyName;Japan;image;null
+name;Type 97 Chi Ha;shortName;Chi Ha;moveRange;2;antiPersonnelRange;7;antiTankRange;1;defendValue;1;armored;TRUE;armyName;Japan;image;null
+name;Type 97 Shinhoto Chi Ha;shortName;Shinhoto Chi Ha;moveRange;2;antiPersonnelRange;5;antiTankRange;4;defendValue;1;armored;TRUE;armyName;Japan;image;null
+name;Type 1 Ho Ni;shortName;Ho Ni;moveRange;2;antiPersonnelRange;9;antiTankRange;6;defendValue;1;armored;TRUE;armyName;Japan;image;null
+name;Type 1 Chi He;shortName;Chi He;moveRange;2;antiPersonnelRange;5;antiTankRange;4;defendValue;2;armored;TRUE;armyName;Japan;image;null
+name;Type 3 Chi Nu;shortName;Chi Nu;moveRange;2;antiPersonnelRange;9;antiTankRange;6;defendValue;2;armored;TRUE;armyName;Japan;image;null
+name;Type 2 Ka Mi;shortName;Ka Mi;moveRange;2;antiPersonnelRange;4;antiTankRange;3;defendValue;1;armored;TRUE;armyName;Japan;image;null
+name;Japanse 37 mm Cannon;shortName;Cannon;moveRange;1;antiPersonnelRange;0;antiTankRange;3;defendValue;0;armored;FALSE;armyName;Japan;image;null
+name;Japanse 47 mm Cannon;shortName;Cannon;moveRange;1;antiPersonnelRange;0;antiTankRange;4;defendValue;0;armored;FALSE;armyName;Japan;image;null
+name;Japanse Light Truck;shortName;Light Truck;moveRange;3;antiPersonnelRange;0;antiTankRange;0;defendValue;0;armored;FALSE;armyName;Japan;image;null
+name;Japanse Med Truck;shortName;Medium Truck;moveRange;3;antiPersonnelRange;0;antiTankRange;0;defendValue;0;armored;FALSE;armyName;Japan;image;null
+name;Japanse Heavy Truck;shortName;Heavy Truck;moveRange;3;antiPersonnelRange;0;antiTankRange;0;defendValue;0;armored;FALSE;armyName;Japan;image;null
+name;Japanse Infantry Squad;shortName;Infantry Squad;moveRange;1;antiPersonnelRange;4;antiTankRange;0;defendValue;1;armored;FALSE;armyName;Japan;image;null
+name;Japanse Engineer Squad;shortName;Engineer Squad;moveRange;1;antiPersonnelRange;5;antiTankRange;1;defendValue;1;armored;FALSE;armyName;Japan;image;null
+name;Japanse Light MG Team;shortName;MG Team;moveRange;1;antiPersonnelRange;3;antiTankRange;0;defendValue;0;armored;FALSE;armyName;Japan;image;null
+name;Japanse Medium MG Team;shortName;MG Team;moveRange;1;antiPersonnelRange;5;antiTankRange;1;defendValue;1;armored;FALSE;armyName;Japan;image;null
+name;Japanse Heavy MG Team;shortName;MG Team;moveRange;1;antiPersonnelRange;9;antiTankRange;1;defendValue;1;armored;FALSE;armyName;Japan;image;null
+name;Japanse Light Mortar Team;shortName;Mortar Team;moveRange;1;antiPersonnelRange;4;antiTankRange;0;defendValue;0;armored;FALSE;armyName;Japan;image;null
+name;Japanse Medium Mortar Team;shortName;Mortar Team;moveRange;1;antiPersonnelRange;7;antiTankRange;1;defendValue;1;armored;FALSE;armyName;Japan;image;null
+name;Japanse Heavy Mortar Team;shortName;Mortar Team;moveRange;0;antiPersonnelRange;10;antiTankRange;2;defendValue;1;armored;FALSE;armyName;Japan;image;null

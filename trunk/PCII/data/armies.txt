@@ -1,0 +1,67 @@
+[
+   {
+      "name": "United States",
+      "allianceName": "Allied",
+      "flag": "USFlag.jpg",
+      "colorRedValue": 60,
+      "colorGreenValue": 60,
+      "colorBlueValue": 0
+   },
+   {
+      "name": "United Kingdom",
+      "allianceName": "Allied",
+      "flag": "UKFlag.jpg",
+      "colorRedValue": 72,
+      "colorGreenValue": 55,
+      "colorBlueValue": 0
+   },
+   {
+      "name": "Soviet Union",
+      "allianceName": "Allied",
+      "flag": "SovietFlag.jpg",
+      "colorRedValue": 20,
+      "colorGreenValue": 60,
+      "colorBlueValue": 0
+   },
+   {
+      "name": "France",
+      "allianceName": "Allied",
+      "flag": "FranceFlag.jpg",
+      "colorRedValue": 60,
+      "colorGreenValue": 60,
+      "colorBlueValue": 60
+   },
+   {
+      "name": "Poland",
+      "allianceName": "Allied",
+      "flag": "PolandFlag.jpg",
+      "colorRedValue": 60,
+      "colorGreenValue": 60,
+      "colorBlueValue": 60
+   },   
+   {
+      "name": "Germany",
+      "allianceName": "Axis",
+      "flag": "GermanyFlag.jpg",
+      "colorRedValue": 60,
+      "colorGreenValue": 60,
+      "colorBlueValue": 60
+   },
+   {
+      "name": "Italy",
+      "allianceName": "Axis",
+      "flag": "ItalyFlag.jpg",
+      "colorRedValue": 60,
+      "colorGreenValue": 60,
+      "colorBlueValue": 60
+   },
+   {
+      "name": "Japan",
+      "allianceName": "Axis",
+      "flag": "JapanFlag.jpg",
+      "colorRedValue": 60,
+      "colorGreenValue": 60,
+      "colorBlueValue": 60
+   }
+
+]

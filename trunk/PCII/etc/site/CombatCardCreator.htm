@@ -1,0 +1,83 @@
+<html>
+<BODY LINK="#0000ff" VLINK="#800080" BACKGROUND="BackgroundGrey.jpg">
+<FONT COLOR="#ffffff">
+<bgsound src="sounds/loading.wav">
+<script type="text/javascript" language="JavaScript" src="CombatData.js"></script>
+<script type="text/javascript" language="JavaScript" src="DisplayCards.js"></script>
+<script type="text/javascript" language="JavaScript" src="AddOrRemoveUnits.js"></script>
+<script type="text/javascript" language="JavaScript" src="EnlargePicture.js"></script>
+
+
+<center>
+<a href="index.htm" target=_top>
+<FONT SIZE=7 COLOR="#ffffff"><P ALIGN="CENTER"><b>PANZER COMBAT II</P>
+</FONT></a>
+<h1>Combat Card Creator</h1>
+<p>Select your units and create combat cards.</p>
+<form name="unitSelectionForm" action="success.html" onSubmit="return displayCards()">
+<input type="submit" value="create combat cards">
+<table>
+<script type="text/javascript" language="JavaScript">
+<!--
+var numCol=6;
+var country=combatData[0][5];
+var flag=country+"Flag.gif";
+var fourSpaces="&nbsp;&nbsp;&nbsp;&nbsp;";
+document.write("<TR><TD colspan=3><img src="+flag+" height=25 width=40>");
+document.write(fourSpaces+"<input type=button value=\"+1\" onclick=\'addOrRemoveUnits(this,\""+country+"\")\'>");
+document.write(fourSpaces+"<input type=button value=\"-1\" onclick=\'addOrRemoveUnits(this,\""+country+"\")\'>");
+document.write("</td></tr>");
+
+var icol=0;
+for(var i=0;i<combatData.length;)
+{
+ document.write("<TR>");
+ for(icol=0;icol<numCol;icol++)
+ {
+  if(i>=combatData.length) break;
+  if(combatData[i][5]!=country) break;  
+  document.write("<TD colspan=2 align=middle><FONT COLOR=#ffffff>"+combatData[i][0]+"</FONT></TD>");
+  i++;
+ }
+ i-=icol;
+ document.write("</TR><TR>");
+ for(icol=0;icol<numCol;icol++)
+ {
+  if(i>=combatData.length) break;
+  if(combatData[i][5]!=country) break;
+  document.write("<TD align=right><select name=unitSelect"+i+">");
+  for(var iOption=0;iOption<11;iOption++) document.write("<option value="+iOption+">"+iOption);
+  document.write("</select></TD>");
+  var unit = combatData[i][0];
+  var pattern=new RegExp(" |\/","g");
+  unitImage="UnitImages/"+unit.replace(pattern,"_")+".jpg";
+  document.write("<td align=left><a href=\""+unitImage+"\" target=_blank><img height=35 alt=\""+unit+"\" src="+unitImage+" onMouseOver=mouseOver(this); onMouseOut=mouseOut(this); ></a></td>");
+  i++;
+ }
+ document.write("</TR><TR>");
+ for(icol=0;icol<numCol;icol++) document.write("<TD>&nbsp;</TD>");
+ document.write("</TR>");
+
+ if(i<combatData.length && combatData[i][5]!=country)
+ { 
+  document.write("<TR>");
+  for(icol=0;icol<numCol;icol++) document.write("<TD>&nbsp;</TD>");
+  document.write("</TR>");
+  country=combatData[i][5];
+  flag=country+"Flag.gif";
+  document.write("<TR><TD colspan=2><img src="+flag+" height=25 width=40>");
+  document.write(fourSpaces+"<input type=button value=\"+1\" onclick=\'addOrRemoveUnits(this,\""+country+"\")\'>");
+  document.write(fourSpaces+"<input type=button value=\"-1\" onclick=\'addOrRemoveUnits(this,\""+country+"\")\'>");
+  document.write("</td></tr>");
+ }
+}
+//-->
+</script>
+<br><br>
+</table>
+<br><br>
+<input type="submit" value="create combat cards">
+</form>
+</FONT>
+</BODY>
+</html>

@@ -95,6 +95,7 @@ public class JSONBeanFactory {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+			//System.out.println("jsonObject :"+jsonObject);
 			beans[i] = JSONBeanFactory.createBean(beanClass, jsonObject);
 		}
 		return beans;
@@ -104,7 +105,7 @@ public class JSONBeanFactory {
 			throws JSONException {
 		JSONTokener tokener = new JSONTokener(reader);
 		JSONArray array = new JSONArray(tokener);
-		// System.out.println(array.toString(3));
+		//System.out.println(array.toString(3));
 		return JSONBeanFactory.createBeans(beanClass, array);
 	}
 

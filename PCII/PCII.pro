@@ -9,4 +9,8 @@
 -keep public class com.gampire.pc.Main {
     public static void main(java.lang.String[]);
 }
--keepdirectories data 
+-keep public class com.gampire.pc.model.**Bean {
+    void set*(***);
+    boolean is*(); 
+    *** get*();
+}

@@ -82,18 +82,22 @@ public class Camp {
             units.remove(unitToRemove);
             numPoints -= type.getPoints();
             unitToRemove.clearDistanceInfoMap();
+            updateUnitsWithSameName(unitToRemove.getUnitType().getShortName());
         }
     }
 
     public void changeUnitType(int iUnit, UnitType unitType) {
         Unit unit = units.get(iUnit);
         numPoints -= unit.getUnitType().getPoints();
+        UnitType oldUnitType=unit.getUnitType();
         unit.setUnitType(unitType);
         numPoints += unitType.getPoints();
         String name = unit.getUnitType().getShortName();
         unit.setName(name);
         Collections.sort(units);
         updateUnitsWithSameName(name);
+        // now update the names of the units with the name as the old unit type
+        updateUnitsWithSameName(oldUnitType.getShortName());
     }
 
     public int removeDestroyedUnits() {
@@ -130,6 +134,10 @@ public class Camp {
                 Unit unit = unitsWithSameName.get(i);
                 unit.setName(nameWithoutCounter + " " + Integer.valueOf(i + 1).toString());
             }
+        } else if (unitsWithSameName.size() == 1) {
+        	// remove the number for single remaining units
+        	Unit singleUnit=unitsWithSameName.get(0);
+        	singleUnit.setName(singleUnit.getUnitType().getShortName());
         }
     }
 

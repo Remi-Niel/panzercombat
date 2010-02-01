@@ -48,7 +48,7 @@ public class BattleFieldPanel extends JPanel implements ListSelectionListener {
 
     private BattleFieldControlPanel battleFieldControlPanel;
 
-    //previous image were moved to etc/ressources
+    //previous images were moved to etc/resources
     //private final ImageIcon background = new ImageIcon(ImageUtil.getScaledImage("battleField.jpg"));
     //private final ImageIcon background = new ImageIcon(ImageUtil.getScaledImage("longHorn.bmp"));
     private final static BufferedImage background = ImageUtil.getScaledImage("germanLandscape.jpg");

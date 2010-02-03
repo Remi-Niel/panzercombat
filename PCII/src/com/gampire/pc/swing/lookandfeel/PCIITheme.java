@@ -52,6 +52,7 @@ public class PCIITheme extends DefaultMetalTheme {
 		UIManager.put("List.foreground", veryLightGray);
 		UIManager.put("List.background", DARK_GRAY);
 		UIManager.put("Label.foreground", veryLightGray);
+		UIManager.put("CheckBox.foreground", veryLightGray);
 		UIManager.put("OptionPane.background", GRAY);
 		UIManager.put("Panel.background", GRAY);
 	}

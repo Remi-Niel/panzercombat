@@ -1,6 +1,5 @@
 package com.gampire.pc.view.dialog;
 
-import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FontMetrics;
 import java.awt.Frame;
@@ -17,6 +16,7 @@ import java.awt.event.MouseWheelListener;
 import javax.swing.BoundedRangeModel;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JCheckBox;
 import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JSlider;
@@ -24,13 +24,14 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import javax.swing.plaf.basic.BasicBorders;
 
+import com.gampire.pc.model.FireInfo;
 import com.gampire.pc.model.UnitAction;
 import com.gampire.pc.swing.cursor.CursorUtil;
 import com.gampire.pc.swing.lookandfeel.PCIITheme;
 import com.gampire.pc.swing.util.TranslucentComponent;
 import com.gampire.pc.util.image.ImageUtil;
 
-public class DistanceDialog extends JDialog {
+public class FireDialog extends JDialog {
 
 	// private JPanel dialogPanel;
 	private final JLabel messageLabel;
@@ -38,7 +39,8 @@ public class DistanceDialog extends JDialog {
 	protected final JSlider slider;
 	private final JButton fireButton = new JButton();
 	private final JButton cancelButton = new JButton();
-
+	private final JCheckBox rearShotCheckBox = new JCheckBox();	
+	
 	private final static int ICON_SIZE = 80;
 
 	private final int maxSelectionIndex;
@@ -47,10 +49,10 @@ public class DistanceDialog extends JDialog {
 
 	private final static double FONT_CORRECTION = 1.15;
 
-	public int selectedDistance = Integer.MAX_VALUE;
+	private FireInfo fireInfo;
 
-	public DistanceDialog(Frame frame, String message,
-			int numPossibleSelections, int initialSelectionIndex) {
+	public FireDialog(Frame frame, String message,
+			int numPossibleSelections, int initialSelectionIndex, boolean isRear) {
 		super(frame, null, true);
 
 		// remove title bar
@@ -83,6 +85,17 @@ public class DistanceDialog extends JDialog {
 				.stringWidth(distanceDescription) * FONT_CORRECTION),
 				fontMetrics.getAscent()));
 
+		// format checkBox
+		rearShotCheckBox.setText("rear shot");
+		rearShotCheckBox.setToolTipText("check for shot at the rear of the target");
+		rearShotCheckBox.setFont(PCIITheme.FONT);
+		rearShotCheckBox.setOpaque(false);
+		rearShotCheckBox.setSelected(isRear);
+		
+		// format buttons
+		formatButton(fireButton, "fire.jpg", UnitAction.FIRE.toString());
+		formatButton(cancelButton, "cancelFire.jpg", "cancel fire");
+
 		slider = new JSlider(0, maxSelectionIndex, initialSelectionIndex);
 		slider.setMajorTickSpacing(2);
 		slider.setMinorTickSpacing(1);
@@ -103,10 +116,6 @@ public class DistanceDialog extends JDialog {
 								fontMetrics.getAscent()));
 			}
 		});
-
-		// format buttons
-		formatButton(fireButton, "fire.jpg", UnitAction.FIRE.toString());
-		formatButton(cancelButton, "cancelFire.jpg", "cancel fire");
 
 		// add action listener to buttons
 		fireButton.addActionListener(new ActionListener() {
@@ -157,8 +166,13 @@ public class DistanceDialog extends JDialog {
 		c.gridy = 0;
 		dialogPanel.add(messageLabel, c);
 		c.gridy = 1;
+		c.gridwidth = 1;
 		dialogPanel.add(distanceLabel, c);
+		c.gridx = 1;
+		dialogPanel.add(rearShotCheckBox, c);
+		c.gridx = 0;
 		c.gridy = 2;
+		c.gridwidth = 2;
 		c.fill = GridBagConstraints.HORIZONTAL;
 		dialogPanel.add(slider, c);
 		c.gridy = 3;
@@ -200,31 +214,30 @@ public class DistanceDialog extends JDialog {
 
 	}
 
-	public int getSelectedDistance() {
-		return selectedDistance;
+	public FireInfo getFireInfo() {
+		return fireInfo;
 	}
 
 	private void formatButton(JButton button, String fileName, String actionName) {
 		button.setIcon(new ImageIcon(ImageUtil.getScaledImage(fileName,
 				ICON_SIZE)));
-		button.setToolTipText(actionName);
 		button.setMargin(new Insets(0, 0, 0, 0));
-		button.setBackground(Color.BLACK);
-		button.setForeground(PCIITheme.LIGHT_GRAY);
 		button.setBorder(BasicBorders.getButtonBorder());
+		button.setToolTipText(actionName);
 	}
 
 	protected void fire() {
-		selectedDistance = slider.getValue();
+		int selectedDistance = slider.getValue();
 		if (selectedDistance == maxSelectionIndex) {
 			// out of los
 			selectedDistance = Integer.MAX_VALUE;
 		}
-		DistanceDialog.this.setVisible(false);
+		fireInfo=new FireInfo(selectedDistance, rearShotCheckBox.isSelected());
+		FireDialog.this.setVisible(false);
 	}
 
 	protected void cancelFire() {
-		selectedDistance = -1;
-		DistanceDialog.this.setVisible(false);
+		fireInfo=new FireInfo(-1, rearShotCheckBox.isSelected());
+		FireDialog.this.setVisible(false);
 	}
 }

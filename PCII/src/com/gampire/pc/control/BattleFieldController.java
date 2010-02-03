@@ -10,12 +10,13 @@ import javax.swing.Timer;
 import com.gampire.pc.license.LicenseManager;
 import com.gampire.pc.model.BattleField;
 import com.gampire.pc.model.Camp;
-import com.gampire.pc.model.DistanceInfo;
+import com.gampire.pc.model.PositioningInfo;
+import com.gampire.pc.model.FireInfo;
 import com.gampire.pc.model.Unit;
 import com.gampire.pc.model.UnitType;
 import com.gampire.pc.speech.Speaker;
 import com.gampire.pc.util.thread.ThreadUtil;
-import com.gampire.pc.view.dialog.DistanceDialog;
+import com.gampire.pc.view.dialog.FireDialog;
 import com.gampire.pc.view.frame.BattleFieldFrame;
 import com.gampire.pc.view.panel.BattleFieldPanel;
 
@@ -145,10 +146,13 @@ public class BattleFieldController implements ActionListener {
 		Camp campLosingUnits = remover.getCampLosingUnits();
 		if (campLosingUnits != null && campLosingUnits.getUnits().size() == 0) {
 
-			Speaker.getInstance().speakAndWait(campLosingUnits.getAlliance().getName()
-					+ " camp has lost all its units.");
-			Speaker.getInstance().speakAndWait("Victory for "
-					+ campLosingUnits.getOther().getAlliance().getName() + ".");
+			Speaker.getInstance().speakAndWait(
+					campLosingUnits.getAlliance().getName()
+							+ " camp has lost all its units.");
+			Speaker.getInstance().speakAndWait(
+					"Victory for "
+							+ campLosingUnits.getOther().getAlliance()
+									.getName() + ".");
 			stopGame();
 			return;
 		}
@@ -168,8 +172,9 @@ public class BattleFieldController implements ActionListener {
 			// nothing to do
 		}
 
-		Speaker.getInstance().speak(battleField.getUnitSelectedForAction().getName()
-				+ ", it's your turn!");
+		Speaker.getInstance().speak(
+				battleField.getUnitSelectedForAction().getName()
+						+ ", it's your turn!");
 	}
 
 	public void waitAWhile() {
@@ -206,13 +211,14 @@ public class BattleFieldController implements ActionListener {
 		}
 
 		// get distance
-		int distance = getDistance(unitSelectedForAction, unitSelectedAsTarget);
+		FireInfo fireInfo = getFireInfo(unitSelectedForAction,
+				unitSelectedAsTarget);
 
 		// if distance is known or has been entered
-		if (distance >= 0) {
+		if (fireInfo.distanceKnown()) {
 
 			String result = unitSelectedForAction.fire(unitSelectedAsTarget,
-					distance, movePenalty);
+					fireInfo, movePenalty);
 			if (unitSelectedAsTarget.isDestroyed()) {
 				waitAWhile();
 				unitSelectedAsTarget.explode();
@@ -257,14 +263,19 @@ public class BattleFieldController implements ActionListener {
 		return unitSelectedAsTarget;
 	}
 
-	public int getDistance(Unit unitSelectedForAction, Unit unitSelectedAsTarget) {
+	public FireInfo getFireInfo(Unit unitSelectedForAction,
+			Unit unitSelectedAsTarget) {
 
-		DistanceInfo distanceInfo = unitSelectedForAction
+		PositioningInfo distanceInfo = unitSelectedForAction
 				.getDistanceInfo(unitSelectedAsTarget);
 
 		if (distanceInfo != null && distanceInfo.isCertain()) {
-			return distanceInfo.getMostProbableDistance();
+			return new FireInfo(distanceInfo.getMostProbableDistance(),
+					distanceInfo.isRearShot());
 		}
+
+		boolean isRear = distanceInfo != null ? distanceInfo.isRearShot()
+				: false;
 
 		// get distance information from dialog if none available or uncertain
 		UnitType firingUnitType = unitSelectedForAction.getUnitType();
@@ -275,7 +286,7 @@ public class BattleFieldController implements ActionListener {
 				+ unitSelectedAsTarget.getName() + " :";
 		Speaker.getInstance().speak(message);
 
-		// number of possible slections is the maximum effective range + next +
+		// number of possible selections is the maximum effective range + next +
 		// out of loss
 		int numPossibleSelections = firingUnitType
 				.getMaximumEffectiveRange(targetUnitType) + 2;
@@ -292,10 +303,10 @@ public class BattleFieldController implements ActionListener {
 			initialSelectionIndex = 0;
 		}
 
-		DistanceDialog dialog = new DistanceDialog(battleFieldFrame, message,
-				numPossibleSelections, initialSelectionIndex);
+		FireDialog dialog = new FireDialog(battleFieldFrame, message,
+				numPossibleSelections, initialSelectionIndex, isRear);
 
-		return dialog.getSelectedDistance();
+		return dialog.getFireInfo();
 
 	}
 

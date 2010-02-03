@@ -276,17 +276,17 @@ public class UnitType implements HasImageIcon, Comparable<UnitType> {
 	}
 
 	public int getMaximumEffectiveRange(UnitType target) {
-		// the effective range is the range + a dice result - the defend value
+		// the effective range is the range + a dice result - half the defend value (for rear shot)
 		int rangeToTarget = target.isArmored() ? getAntiTankRange()
 				: getAntiPersonnelRange();
 		int rangeFromTarget = isArmored() ? target.getAntiTankRange() : target
 				.getAntiPersonnelRange();
 
-		// take minimal additional defend points for this (i.e 0)
+		// take minimal additional defend points for this (i.e 0) and half defend value (rear shot)
 		int maximumEffectiveRangeToTarget = rangeToTarget + 6
-				- target.getDefendValue();
+				- (target.getDefendValue()) / 2;
 		int maximumEffectiveRangeFromTarget = rangeFromTarget + 6
-				- getDefendValue();
+				- (getDefendValue()) / 2;
 
 		int maximumEffectiveRange = maximumEffectiveRangeToTarget > maximumEffectiveRangeFromTarget ? maximumEffectiveRangeToTarget
 				: maximumEffectiveRangeFromTarget;

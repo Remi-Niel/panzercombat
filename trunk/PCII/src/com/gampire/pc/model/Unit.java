@@ -1,6 +1,5 @@
 package com.gampire.pc.model;
 
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -30,7 +29,7 @@ public class Unit implements HasImageIcon, Comparable<Unit> {
 	private int additionalDefendPoints = 0;
 
 	// distance to enemy units
-	final private Map<Unit, DistanceInfo> distanceInfoMapToEnemyUnits = new HashMap<Unit, DistanceInfo>();
+	final private Map<Unit, PositioningInfo> distanceInfoMapToEnemyUnits = new HashMap<Unit, PositioningInfo>();
 
 	final private UnitAnimation animation = new UnitAnimation(this);
 
@@ -111,7 +110,7 @@ public class Unit implements HasImageIcon, Comparable<Unit> {
 		return additionalDefendPoints;
 	}
 
-	public DistanceInfo getDistanceInfo(Unit unit) {
+	public PositioningInfo getDistanceInfo(Unit unit) {
 		if (distanceInfoMapToEnemyUnits.containsKey(unit)) {
 			return distanceInfoMapToEnemyUnits.get(unit);
 		} else {
@@ -124,7 +123,8 @@ public class Unit implements HasImageIcon, Comparable<Unit> {
 		int closestDistance = Integer.MAX_VALUE;
 		Set<Unit> units = distanceInfoMapToEnemyUnits.keySet();
 		for (Unit unit : units) {
-			int distance = distanceInfoMapToEnemyUnits.get(unit).getMostProbableDistance();
+			int distance = distanceInfoMapToEnemyUnits.get(unit)
+					.getMostProbableDistance();
 			if (distance < closestDistance) {
 				closestDistance = distance;
 				closestUnit = unit;
@@ -144,13 +144,18 @@ public class Unit implements HasImageIcon, Comparable<Unit> {
 		distanceInfoMapToEnemyUnits.clear();
 	}
 
-	// call this when removing a unit
+	// called when moving
 	public void updateDistanceInfoMap(double moveDistance) {
-		Collection<DistanceInfo> infos = distanceInfoMapToEnemyUnits.values();
-		for (DistanceInfo info : infos) {
-			info.update(moveDistance);
-			// note: don't need to update the info in the map of the related
-			// units as these maps are the same objects
+		Set<Map.Entry<Unit, PositioningInfo>> distanceInfoMapToEnemyUnitsEntries = distanceInfoMapToEnemyUnits.entrySet();
+		for(Map.Entry<Unit, PositioningInfo> entry : distanceInfoMapToEnemyUnitsEntries) {
+			Unit unit=entry.getKey();	
+			PositioningInfo info=entry.getValue();
+			info.update(moveDistance, true);
+			// need to update the info in the map of the related
+			// units as these maps are not the same objects anymore 
+			// since rear fire has been introduced
+			PositioningInfo enemyInfo=unit.distanceInfoMapToEnemyUnits.get(this);
+			enemyInfo.update(moveDistance, false);
 		}
 	}
 
@@ -196,9 +201,9 @@ public class Unit implements HasImageIcon, Comparable<Unit> {
 		return result;
 	}
 
-	public String fire(Unit target, int distance, boolean movePenalty) {
+	public String fire(Unit target, FireInfo fireInfo, boolean movePenalty) {
 		// if out of LOS
-		if (distance == Integer.MAX_VALUE) {
+		if (fireInfo.outOfLOSOrToFar()) {
 			String result = name + " can't fire on " + target.name + ". ";
 			return result + target.name + " is out of LOS.\n";
 		}
@@ -209,17 +214,28 @@ public class Unit implements HasImageIcon, Comparable<Unit> {
 		// the unit has fired
 		hasFired = true;
 
-		// set distance two way (in order to avoid asking again next time)
-		DistanceInfo distanceInfo = new DistanceInfo(distance);
-		distanceInfoMapToEnemyUnits.put(target, distanceInfo);
-		target.distanceInfoMapToEnemyUnits.put(this, distanceInfo);
+		// convert fireInfo in distance info two way (in order to avoid asking
+		// again next time). For the attacking unit :
+		distanceInfoMapToEnemyUnits.put(target, new PositioningInfo(fireInfo
+				.getDistance(), fireInfo.isRearShot()));
+
+		// ... and for the target unit. The target will not see the attacking at
+		// the rear side as units always attach with the front
+		target.distanceInfoMapToEnemyUnits.put(this, new PositioningInfo(fireInfo
+				.getDistance(), false));
 
 		// compute the range
 		int range = target.getUnitType().isArmored() ? unitType
 				.getAntiTankRange() : unitType.getAntiPersonnelRange();
 
+		// divide defend value by 2 for rear shot
+		int defendValue = target.getUnitType().getDefendValue();
+		if (fireInfo.isRearShot()) {
+			defendValue /= 2;
+		}
+
 		// compute effective defend value of target unit
-		int effectiveDefendValue = target.getUnitType().getDefendValue()
+		int effectiveDefendValue = defendValue
 				+ target.getAdditionalDefendPoints();
 
 		// roll dice
@@ -228,7 +244,7 @@ public class Unit implements HasImageIcon, Comparable<Unit> {
 		// compute the effective range
 		int effectiveRange = range + diceRoll - effectiveDefendValue;
 
-		// substact move range if there is a move penalty
+		// substract move range if there is a move penalty
 		String whileMoving = "";
 		if (movePenalty) {
 			effectiveRange -= getUnitType().getMoveRange();
@@ -236,20 +252,20 @@ public class Unit implements HasImageIcon, Comparable<Unit> {
 		}
 
 		// compute result
-		String result = name + " fires on ";
+		String result = fireInfo.isRearShot() ? name + " fires at the rear of " : name + " fires on ";
 
-		if (distance == 0) {
+		if (fireInfo.getDistance() == 0) {
 			result += "adjacent unit " + target.name + whileMoving + ". ";
-		} else if (distance == 1) {
+		} else if (fireInfo.getDistance() == 1) {
 			result += target.name + " at one distance unit" + whileMoving
 					+ ". ";
 		} else {
-			result += target.name + " at " + distance + " distance units"
+			result += target.name + " at " + fireInfo.getDistance() + " distance units"
 					+ whileMoving + ". ";
 		}
 
 		// smaller or equal corresponds to distance within effective range
-		if (distance <= effectiveRange) {
+		if (fireInfo.getDistance() <= effectiveRange) {
 			final Camp targetCamp = target.getCamp();
 			final int numberOfUnitsLeftInTargetCamp = targetCamp.getUnits()
 					.size() - 1;
@@ -262,7 +278,7 @@ public class Unit implements HasImageIcon, Comparable<Unit> {
 					+ numberOfUnitsLeftInTargetCampString + " left.\n";
 			target.destroyed = true;
 		} else {
-			if (distance - effectiveRange < 2) {
+			if (fireInfo.getDistance() - effectiveRange < 2) {
 				result += "It missed very close!\n";
 			} else {
 				result += "It missed.\n";
@@ -294,77 +310,6 @@ public class Unit implements HasImageIcon, Comparable<Unit> {
 		// play sound
 		UnitAction.EXPLODE.playSound();
 	}
-
-	// private static final String[] noNames = { "US", "Light", "Medium",
-	// "Heavy",
-	// "White", "Ausf", "III", "Section", "NbFz" };
-	//	
-	// public String computeName() {
-	// String[] subStrings = unitType.getName().split(" |\\/");
-	// int maxLength = 0;
-	// String unitName = "";
-	// for (int i = 0; i < subStrings.length; i++) {
-	// String subString = subStrings[i];
-	//
-	// // do some replacements
-	// if (subString.equals("PzKpfw")) {
-	// subString = "Panzer";
-	// }
-	// if (subString.equals("SdKfz")) {
-	// subString = "Fahrzeug";
-	// }
-	// if (subString.equals("ATG")) {
-	// subString = "Anti Tank Gun";
-	// }
-	//
-	// // have Medium Truck instead of Truck
-	// if (i > 0 && subString.length() < 10) {
-	// if (subString.equals("Truck") || subString.equals("Riffle")
-	// || subString.equals("Squad")
-	// || subString.equals("Tank") || subString.equals("Team")
-	// || subString.equals("Truck")) {
-	// unitName = subStrings[i - 1] + " " + subString;
-	// if (unitName.length() > 15) {
-	// unitName = subStrings[i - 1];
-	// }
-	// break;
-	// }
-	// }
-	//
-	// boolean canBeUsed = true;
-	// for (String element : noNames) {
-	// if (subString.equals(element)) {
-	// canBeUsed = false;
-	// }
-	// }
-	//
-	// if (!canBeUsed) {
-	// continue;
-	// }
-	// boolean containsNumerics = false;
-	// for (int iChar = 0; iChar < subString.length(); iChar++) {
-	// if (Character.digit(subString.charAt(iChar), 10) != -1) {
-	// containsNumerics = true;
-	// break;
-	// }
-	// }
-	// //if the string contains numerics and is not the last one, take next one
-	// if (containsNumerics && i<subStrings.length-1) {
-	// continue;
-	// }
-	// int subStringLength = subString.length();
-	// // make sure Tiger is taken in "PzKpfw VI Tiger I"
-	// if (subString.equals("Panzer")) {
-	// subStringLength = 3;
-	// }
-	// if (subStringLength >= maxLength) {
-	// maxLength = subStringLength;
-	// unitName = subString;
-	// }
-	// }
-	//
-	// return unitName;
-	// }
 
 	public UnitAnimation getAnimation() {
 		return animation;
